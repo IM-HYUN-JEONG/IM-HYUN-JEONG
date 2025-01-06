@@ -1,0 +1,598 @@
+{
+  "ulvac": "알박",
+  "ulvac_korea": "한국알박",
+  "visitor_registration_system": "내방시스템",
+  "login": "로그인",
+  "username": "아이디",
+  "password": "비밀번호",
+  "sign_up": "회원가입",
+  "find_id": "아이디 찾기",
+  "reset_password": "비밀번호 재설정",
+  "remember_username": "아이디 기억하기",
+  "edit_user_info_title": "회원정보 관리",
+  "login_error": "로그인 정보가 맞지 않습니다.",
+  "manual": "매뉴얼",
+  "datepicker_placeholder": "년-월-일",
+  "validation": {
+    "required": "이 입력란을 작성하세요."
+  },
+  "not_found_page": {
+    "title": "찾을 수 없는 페이지 입니다.",
+    "sub_title1": "요청하신 페이지가 사라졌거나,",
+    "sub_title2": " 존재하지 않는 페이지 입니다.",
+    "go_back": "뒤로가기"
+  },
+  "item_popup": {
+    "add_edit": "추가/변경",
+    "name_ko": "이름(한국어)",
+    "name_en": "이름(영어)",
+    "name_ja": "이름(일본어)",
+    "ask_delete": "삭제하시겠습니까?",
+    "btn": {
+      "change": "변경",
+      "delete": "삭제",
+      "add": "추가",
+      "cancel": "취소",
+      "ok": "확인"
+    }
+  },
+  "menu": {
+    "settings": {
+      "settings": "환경설정",
+      "system": "시스템 설정",
+      "policy": "정책 관리",
+      "item": "항목 관리",
+      "group": "그룹 관리",
+      "user": "사용자 관리",
+      "employee": "임직원 알림 설정"
+    },
+    "visit_request": "내방신청",
+    "visit_history": "내방신청 내역",
+    "visit_status": "내방신청 현황",
+    "manual": "매뉴얼",
+    "faq": "FAQ",
+    "notice": "공지사항"
+  },
+  "edit_user_info": {
+    "title": "내 정보",
+    "is_native_foreigners": "내/외국인",
+    "native": "내국인",
+    "foreigner": "외국인",
+    "id": "아이디",
+    "cur_pw": "현재 비밀번호",
+    "new_pw": "새 비밀번호",
+    "new_pw_check": "새 비밀번호 확인",
+    "name": "이름",
+    "birth": "생년월일",
+    "email": "이메일",
+    "phone": "휴대전화",
+    "company_name": "회사이름",
+    "company_phone": "회사연락처",
+    "change_btn": "변경",
+    "delete_account_btn": "회원탈퇴",
+    "message": {
+      "cur_pw": "현재 비밀번호를 입력해주세요.",
+      "new_pw": "새 비밀번호를 입력해주세요.",
+      "pw_validity": "영문, 숫자, 특수문자를 각 1개씩 포함하여 8~32자리이어야 합니다.",
+      "new_pw_check": "새 비밀번호를 다시 입력해주세요.",
+      "pw_wrong": "비밀번호가 일치하지 않습니다.",
+      "company_name": "회사 이름을 입력해주세요.",
+      "company_phone": "회사 연락처를 입력해주세요.",
+      "name": "이름을 입력해주세요.",
+      "phone": "전화번호를 입력해주세요.",
+      "phone_wrong": "올바른 전화번호 형식으로 입력해주세요.",
+      "id": "아이디를 입력해주세요.",
+      "change_success": "변경 되었습니다.",
+      "error": "오류가 발생하여 처리할 수 없습니다. 잠시 후 다시 시도해주세요. 문제가 계속된다면 관리자에게 문의해주시기 바랍니다."
+    },
+    "delete_account": {
+      "check_title": "회원탈퇴 확인",
+      "check_content": "정말로 회원탈퇴를 진행하시겠습니까? 모든 정보가 삭제됩니다.",
+      "check_ok_text": "확인",
+      "check_cancel_text": "취소",
+      "success_title": "회원탈퇴 완료",
+      "success_content": "회원탈퇴가 성공적으로 처리되었습니다.",
+      "err_content1": "알 수 없는 오류가 발생했습니다.",
+      "err_content2": "회원탈퇴 중 오류가 발생했습니다. 다시 시도해주세요."
+    }
+  },
+
+  "visit_request_status": {
+    "today": "오늘",
+    "business_place_name": "사업장",
+    "name": "이름",
+    "card_number": "카드번호",
+    "will_visit": "내방 예정",
+    "purpose": "목적",
+
+    "total_visitors": "신청",
+    "total_visits": "지급",
+    "total_not_returns": "미회수",
+    "total_problems": "분실,파손",
+    "count": "건",
+
+    "planned_visit": "내방예정",
+    "planned_visit_subtitle": "오늘 방문할 방문자 목록",
+    "visiting": "내방중",
+    "visiting_subtitle": "오늘 출입보안카드를 회수해야 할 방문자 목록",
+    "visit_completed": "내방완료",
+    "visit_completed_subtitle": "오늘 출입보안카드를 회수한 방문자 목록",
+    "unreturned_card": "카드미회수",
+    "lost_card": "카드분실",
+    "damaged_card": "카드파손",
+    "unreturned_card_1": "출입보안카드 미회수",
+    "unreturned_card_subtitle": "출입보안카드가 회수되지 않은 방문자 목록",
+    "lost_card_1": "출입보안카드 분실",
+    "lost_card_subtitle": "출입보안카드를 분실한 방문자 목록",
+    "damaged_card_1": "출입보안카드 파손",
+    "damaged_card_subtitle": "출입보안카드를 파손한 방문자 목록",
+
+    "list": {
+      "no_matching_visitors": "해당하는 방문자가 없습니다.",
+      "access_security_card": "출입보안카드",
+      "visit_time": "내방시간",
+      "manager_name": "담당자",
+      "car": "차량번호",
+      "birth": "생년월일",
+      "phone": "전화번호",
+      "company_name": "회사이름",
+      "purpose": "목적",
+      "digital_devices": "디지털기기",
+      "no_devices": "등록된 디지털 기기가 없습니다.",
+      "mount": "개"
+    },
+    "popup": {
+      "access_security_card_info": "출입보안카드 정보",
+      "status": "상태",
+      "assigned": "발급처리",
+      "lose_cancel": "분실취소",
+      "return": "회수처리",
+      "damage": "파손처리",
+      "lost": "회수처리",
+      "list": "내역",
+      "no_list": "내역이 없습니다.",
+      "dialog": {
+        "really": "정말로",
+        "do_it": "처리를 하시겠습니까?",
+        "enter_card_number": "카드번호를 입력해주세요.",
+        "card_number": "카드번호",
+        "cancel": "취소",
+        "ok": "확인"
+      },
+      "message": {
+        "error": "오류가 발생하여 처리할 수 없습니다. 잠시 후 다시 시도해주세요. 문제가 계속된다면 관리자에게 문의해주시기 바랍니다.",
+        "card_number_wrong": "카드번호가 일치하지 않습니다."
+      }
+    }
+  },
+  "visitor_info": {
+    "visitor": "방문자",
+    "add": "추가",
+    "edit": "수정",
+    "name": "이름",
+    "birth": "생년월일",
+    "phone": "전화번호",
+    "email": "이메일",
+    "company_name": "회사이름",
+    "company_phone": "회사연락처",
+    "blood_type": "혈액형",
+    "none": "알 수 없음",
+    "car": "방문 차량번호",
+    "memo": "메모",
+    "digital_devices": { "title": "디지털 기기", "none": "없음", "type": "종류", "model_name": "모델명", "serial_number": "모델일련번호명" },
+    "message": {
+      "name": "이름을 입력해주세요.",
+      "email": "이메일을 입력해주세요.",
+      "company_name": "회사이름을 입력해주세요.",
+      "car": "차량을 가져오실 경우 반드시 입력해주세요.",
+      "field_error": "필수 항목을 모두 입력해주세요: ",
+      "digital_type_error": "디지털 기기 종류를 선택해주세요.",
+      "model_name_error": "디지털 기기 모델명을 입력해주세요."
+    },
+    "btn": {
+      "add": "추가",
+      "edit": "수정"
+    },
+    "validation": {
+      "phone_required": "전화번호를 입력해주세요.",
+      "invalid_phone_number": "올바른 전화번호 형식이 아닙니다.",
+      "email_required": "이메일을 입력해주세요.",
+      "invalid_email": "올바른 이메일 형식이 아닙니다.",
+      "company_phone_required": "회사 연락처를 입력해주세요.",
+      "invalid_company_phone": "올바른 회사 연락처 형식이 아닙니다."
+    }
+  },
+
+  "user": {
+    "type": {
+      "employee": "임직원",
+      "native": "내국인",
+      "foreigner": "외국인"
+    }
+  },
+  "footer": {
+    "term": "이용약관",
+    "privacy": "개인정보처리방침",
+    "ulvac_korea": "한국알박(주) CEO: 김선길",
+    "business_registration_number": "사업자등록번호: 214-81-90298",
+    "address": "주소: 177-92 경기 평택시 청북읍 한산길 5(한산리)",
+    "copyright": "COPYRIGHT©2025 한국알박(주) ALL RIGHTS RESERVED"
+  },
+  "find_id_page": {
+    "title": "아이디 찾기",
+    "is_native_foreigners": "내/외국인",
+    "native": "내국인",
+    "foreigner": "외국인",
+    "name": "이름",
+    "email": "이메일",
+    "phone": "휴대전화",
+    "placeholder": {
+      "name": "이름을 입력해주세요.",
+      "phone": "전화번호를 입력해주세요.",
+      "phone_wrong": "올바른 전화번호 형식으로 입력해주세요.",
+      "id": "아이디를 입력해주세요.",
+      "pw": "비밀번호를 입력해주세요.",
+      "pw_check": "비밀번호를 한번 더 입력해주세요.",
+      "birth": "생년월일",
+      "email": "이메일을 입력해주세요.",
+      "email_wrong": "올바른 이메일 형식으로 입력해주세요.",
+      "error": "알 수 없는 오류가 발생했습니다."
+    },
+    "btn": {
+      "ok": "확인",
+      "log_in": "로그인 하기",
+      "reset_password": "비밀번호 재설정"
+    },
+    "content1": "님의 아이디는",
+    "content2": "입니다."
+  },
+  "find_pw_page": {
+    "title": "비밀번호 재설정",
+    "is_native_foreigners": "내/외국인",
+    "native": "내국인",
+    "foreigner": "외국인",
+    "name": "이름",
+    "id": "아이디",
+    "phone": "휴대전화",
+    "email": "이메일",
+    "certify_code": "인증코드",
+    "pw": "비밀번호",
+    "pw_check": "비밀번호 확인",
+    "message": {
+      "name": "이름을 입력해주세요.",
+      "id": "아이디를 입력해주세요.",
+      "phone": "전화번호를 입력해주세요.",
+      "phone_wrong": "올바른 전화번호 형식으로 입력해주세요.",
+      "email": "이메일을 입력해주세요.",
+      "email_wrong": "올바른 이메일 형식으로 입력해주세요.",
+      "certify_code": "인증코드를 입력하세요.",
+      "pw": "비밀번호를 입력해주세요.",
+      "pw_validity": "영문, 숫자, 특수문자를 각 1개씩 포함하여 8~32자리이어야 합니다.",
+      "pw_check": "비밀번호를 한번 더 입력해주세요.",
+      "pw_wrong": "비밀번호가 일치하지 않습니다.",
+
+      "completed1": "비밀번호 초기화가 완료되었습니다.",
+      "completed2": "제공된 비밀번호로",
+      "completed3": "로그인을 하시기 바랍니다.",
+
+      "error": "알 수 없는 오류가 발생했습니다."
+    },
+    "btn": {
+      "certify": "인증",
+      "next": "다음",
+      "reset": "재설정",
+      "log_in": "로그인 하기"
+    }
+  },
+
+  "sign_up_steps": {
+    "agree_terms": "약관동의",
+    "enter_inform": "회원정보입력",
+    "complete": "회원가입완료"
+  },
+  "sign_up_agree_terms": {
+    "term": "이용약관",
+    "term_loading": "이용약관을 불러오는 중입니다...",
+    "privacy": "개인정보 수집 및 이용 동의",
+    "privacy_loading": "개인정보 처리방침을 불러오는 중입니다...",
+    "btn": {
+      "before": "이전",
+      "after": "다음",
+      "agree": "동의함",
+      "disagree": "동의하지 않음"
+    }
+  },
+  "sign_up_enter_inform": {
+    "enter_inform": "회원정보",
+    "is_native_foreigners": "내/외국인",
+    "native": "내국인",
+    "foreigner": "외국인",
+    "id": "아이디",
+    "pw": "비밀번호",
+    "pw_check": "비밀번호 확인",
+    "name": "이름",
+    "birth": "생년월일",
+    "email": "이메일",
+    "phone": "휴대전화",
+    "company_name": "회사이름",
+    "company_phone": "회사연락처",
+    "certify": "인증",
+    "certify_code": "인증코드",
+    "certify_code_time": "인증 코드 유효시간",
+    "ok": "확인",
+
+    "btn": {
+      "before": "이전",
+      "join": "가입하기"
+    },
+    "placeholder": {
+      "id": "아이디를 입력해주세요.",
+      "pw": "비밀번호를 입력해주세요.",
+      "pw_check": "비밀번호를 한번 더 입력해주세요.",
+      "name": "이름을 입력해주세요.",
+      "birth": "생년월일",
+
+      "email": "이메일을 입력해주세요.",
+      "certify_code": "인증 코드를 입력하세요.",
+      "phone": "전화번호를 입력해주세요.",
+      "company_name": "회사이름을 입력해주세요.",
+      "company_phone": "회사연락처를 입력해주세요."
+    },
+    "message": {
+      "pw_validity": "영문, 숫자, 특수문자를 각 1개씩 포함하여 8~32자리이어야 합니다.",
+      "pw_wrong": "비밀번호가 일치하지 않습니다.",
+
+      "email_wrong": "올바른 이메일 형식으로 입력해주세요.",
+      "certify_code_finish": "인증이 완료되었습니다.",
+      "phone_wrong": "올바른 전화번호 형식으로 입력해주세요.",
+
+      "sign_up_err_msg": "계정 신청 중 오류가 발생했습니다. 다시 시도해주세요.",
+
+      "email_certify_success_content": "이메일이 성공적으로 인증되었습니다.",
+      "phone_certify_success_content": "휴대전화가 성공적으로 인증되었습니다.",
+      "email_certify_wrong": "이메일 인증 실패",
+      "phone_certify_wrong": "휴대전화 인증 실패"
+    }
+  },
+  "sign_up_complete": {
+    "complete": "회원가입 완료",
+    "section1": "님의 회원가입이",
+    "section2": "성공적으로 완료되었습니다.",
+    "login": "로그인하기"
+  },
+  "system_settings": {
+    "file": {
+      "choose_file": "파일 선택",
+      "no_file": "선택된 파일 없음"
+    },
+    "template_description": {
+      "verify_code": "회원가입, 비밀번호 재설정 등 인증코드를 보내는 메일 (수신자: 내방객)",
+      "visit_request": "내방신청 시 승인 요청을 보내는 메일 (수신자: 담당자)",
+      "visit_request_approve": "내방신청이 승인됨을 알리는 메일 (수신자: 내방객) *첨부파일 포함",
+      "visit_request_reject": "내방신청이 반려됨을 알리는 메일 (수신자: 내방객)",
+      "visit_request_cancel": "내방신청이 취소됨을 알리는 메일 (수신자: 담당자)",
+      "security_card_issue": "방문객이 카드를 분실/파손했다고 알리는 메일 (수신자: 총무파트)",
+      "password_reset": "사용자의 비밀번호가 초기화됐을 때 변경된 비밀번호를 보내는 메일 (수신자: 사용자)"
+    },
+
+    "title": "시스템 설정",
+    "manual": "매뉴얼",
+    "faq": "FAQ",
+    "email_template": "이메일 템플릿",
+    "email_template_btn": {
+      "verify_code": "인증코드",
+      "visit_request": "내방신청",
+      "visit_request_approve": "승인처리",
+      "visit_request_reject": "반려처리",
+      "visit_request_cancel": "취소처리",
+      "card_issue": "카드이슈",
+      "password_reset": "비번초기화"
+    },
+    "native": "내국인",
+    "foreigner": "외국인",
+    "save": "저장",
+    "send_test_mail_to_me": "나에게 테스트 메일 전송",
+    "mail_title": "메일 제목",
+    "no_upload_file": "업로드된 파일 없음",
+
+    "ko": "한국어",
+    "en": "영어",
+    "ja": "일본어"
+  },
+
+  "policy_management": {
+    "title": "정책 관리",
+    "term": "이용약관",
+    "privacy": "개인정보처리방침",
+    "security": "보안서약서",
+    "save_term": "이용약관 저장",
+    "save_privacy": "개인정보처리방침 저장",
+    "save_security": "보안서약서 저장",
+    "privacy_dialog_content1": "개인정보처리방침의",
+    "privacy_dialog_content2": "버전을 새로 추가하시겠습니까?",
+    "cancel": "취소",
+    "ok": "확인",
+    "cur_version": "현재 버전",
+    "new_version": "새 버전",
+    "ko": "한국어",
+    "en": "영 어",
+    "ja": "일본어"
+  },
+
+  "item_management": {
+    "title": "항목 관리",
+    "item_table": {
+      "business": {
+        "title": "사업장"
+      },
+      "device": {
+        "title": "디지털기기"
+      },
+      "name_ko": "이름(한국어)",
+      "name_en": "이름(영어)",
+      "name_ja": "이름(일본어)"
+    }
+  },
+  "group_management": {
+    "title": "그룹 관리",
+    "in_group_user": "그룹에 속한 사용자",
+    "out_group_user": "그룹에 속하지 않은 사용자",
+    "in_group": "그룹에 넣기",
+    "out_group": "그룹에서 빼기",
+    "search_placeholder": "아이디 또는 이름"
+  },
+  "account_management": {
+    "title": "사용자 관리",
+    "external_user_notification": "외부사용자 알림",
+    "external_user": "외부사용자",
+    "chart": {
+      "id": "ID",
+      "national_foreigner": "내/외국인",
+      "name": "이름",
+      "company_name": "회사",
+      "email": "이메일",
+      "phone": "휴대전화"
+    },
+
+    "popup": {
+      "id": "ID",
+      "status": "상태",
+      "status_list": { "active": "정상", "aborted": "정지", "none": "알 수 없음", "active": "정상" },
+      "national": "내국인",
+      "foreigner": "외국인",
+      "name": "이름",
+      "company_info": "회사정보",
+      "email": "이메일",
+      "phone": "휴대전화",
+      "penalty": "페널티",
+      "no_company_number": "연락처 정보 없음",
+      "activation": "활성화",
+      "deactivation": "정지"
+    },
+    "password_reset": "비밀번호 초기화",
+    "search_placeholder": "아이디 또는 이름"
+  },
+  "employee_notification": {
+    "title": "임직원 알림 설정",
+    "ulvac_employee": "알박 임직원",
+    "chart": {
+      "id": "ID",
+      "name": "이름",
+      "email": "이메일",
+      "notification": "알림",
+      "notification_editor": "알림 수정자",
+      "phone": "휴대전화"
+    },
+    "search_placeholder": "아이디 또는 이름"
+  },
+
+  "visitor": {
+    "security_card": {
+      "status": {
+        "assigned": "할당",
+        "issued": "발급",
+        "returned": "반납",
+        "lost": "분실",
+        "damaged": "파손",
+        "lose_canceled": "분실취소"
+      }
+    }
+  },
+  "visit_request": {
+    "applicant_information": "신청자 정보",
+    "applicant_information_list": {
+      "birth": "생년월일",
+      "phone_number": "전화번호",
+      "company_name": "회사이름",
+      "company_phone_number": "회사연락처"
+    },
+    "visit_request_information": "방문신청 정보",
+    "visit_request_information_list": {
+      "business_place_name": "사업장",
+      "visit_date": "방문일자",
+      "manager_name": "담당자 메일주소",
+      "visit_time": "내방시간",
+      "purpose": "목적",
+      "manager_name_ok_msg": "담당자 확인이 되었습니다."
+    },
+    "visitor_information": "방문자 정보",
+    "visitor_information_list": {
+      "birth": "생년월일",
+      "blood_type": "혈액형",
+      "company_phone_number": "회사연락처",
+      "company_name": "회사이름",
+      "company": "회사",
+      "email": "이메일",
+      "phone_number": "전화번호",
+      "car_number": "방문 차량번호",
+      "note": "메모",
+      "digital_devices": {
+        "digital_devices": "디지털기기",
+        "digital_device_name": "종류",
+        "model_name": "모델명",
+        "serial_number": "일련번호",
+        "no_devices": "등록된 디지털 기기가 없습니다.",
+        "choose_devices": "디지털기기를 선택해주세요.",
+        "mount": "개"
+      },
+      "button_name": {
+        "request": "신청",
+        "edit": "변경",
+        "cancel": "신청취소",
+        "approve": "승인",
+        "reject": "반려",
+        "re_request": "재신청"
+      }
+    },
+    "security_modal": {
+      "loading": "보안서약 약관을 불러오는 중입니다...",
+      "security_agree": "보안서약 약관 동의",
+      "security_content_1": "본 서비스의 약관에 동의하셔야 이용하실 수 있습니다.",
+      "security_content_2": "동의하시겠습니까?",
+      "agree": "동의"
+    },
+    "reject_reason": "반려사유",
+    "error_messages": {
+      "business_place_required": "사업장을 선택해주세요.",
+      "visit_date_required": "방문일자를 선택해주세요.",
+      "manager_required": "담당자를 선택해주세요.",
+      "visit_time_required": "내방시간을 선택해주세요.",
+      "purpose_required": "목적을 작성해주세요.",
+      "visitors_required": "방문자가 없습니다.",
+      "request_success": "방문 신청이 완료되었습니다.",
+      "request_warn": "방문 신청 중 예상치 못한 응답을 받았습니다.",
+      "request_change_success": "변경 되었습니다.",
+      "request_change_warn": "변경 처리 중 문제가 발생했습니다. 다시 시도해주세요.",
+      "request_cancel_success": "신청이 취소 되었습니다.",
+      "request_cancel_warn": "신청을 취소하는 중에 문제가 발생했습니다. 다시 시도해주세요.",
+      "error": "시스템 오류가 발생했습니다. 잠시 후 다시 시도해주세요."
+    }
+  },
+  "visit_request_list": {
+    "visit_request_list": "신청 내역",
+    "manager_name": "알박 담당자",
+    "requester": "신청자",
+    "card_number": "카드번호",
+    "person_matches": "명 일치",
+    "purpose": "목적",
+    "visit_date": "방문일자",
+    "status": "상태",
+    "reject_reason": "반려사유",
+    "status_list": {
+      "all": "전체",
+      "reject": "반려",
+      "approve": "승인",
+      "cancel": "신청취소",
+      "request": "요청중",
+      "request_complete": "신청완료"
+    },
+    "search": "조회",
+    "send_mail": "승인목록_메일전송",
+    "send_mail_success": "메일 전송 완료",
+    "send_mail_fail": "메일 전송 실패",
+    "no_request_data": "신청 내역이 없습니다."
+  },
+  "visitor_popup": {
+    "visitor": "방문자"
+  }
+}

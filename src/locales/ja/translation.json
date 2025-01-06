@@ -1,0 +1,589 @@
+{
+  "ulvac": "ULVAC",
+  "ulvac_korea": "ULVAC KOREA",
+  "visitor_registration_system": "来訪者登録システム",
+  "login": "ログイン",
+  "username": "ID",
+  "password": "Password",
+  "sign_up": "会員登録",
+  "find_id": "IDを探す",
+  "reset_password": "パスワード再設定",
+  "remember_username": "ユーザー名を記憶する",
+  "edit_user_info_title": "会員情報管理",
+  "login_error": "ログイン情報が間違っています。",
+  "manual": "マニュアル",
+  "datepicker_placeholder": "年-月-日",
+  "validation": {
+    "required": "このフィールドを入力してください。"
+  },
+  "not_found_page": {
+    "title": "ページが見つかりません。",
+    "sub_title1": "リクエストされたページが削除されたか、",
+    "sub_title2": "存在しないページです。",
+    "go_back": "戻る"
+  },
+  "item_popup": {
+    "add_edit": "追加/変更",
+    "name_ko": "名前(韓国語)",
+    "name_en": "名前(英語)",
+    "name_ja": "名前(日本語)",
+    "ask_delete": "削除しますか？",
+    "btn": {
+      "change": "変更",
+      "delete": "削除",
+      "add": "追加",
+      "cancel": "キャンセル",
+      "ok": "確認"
+    }
+  },
+  "menu": {
+    "settings": {
+      "settings": "設定",
+      "system": "システム設定",
+      "policy": "ポリシー管理",
+      "item": "項目管理",
+      "group": "グループ管理",
+      "user": "ユーザー管理",
+      "employee": "従業員通知設定"
+    },
+    "visit_request": "訪問リクエスト",
+    "visit_history": "訪問履歴",
+    "visit_status": "訪問状況",
+    "manual": "マニュアル",
+    "faq": "よくあるご質問",
+    "notice": "お知らせ"
+  },
+  "edit_user_info": {
+    "title": "マイ情報",
+    "is_native_foreigners": "内国人/外国人",
+    "native": "内国人",
+    "foreigner": "外国人",
+    "id": "ID",
+    "cur_pw": "現在のパスワード",
+    "new_pw": "新しいパスワード",
+    "new_pw_check": "新しいパスワードの確認",
+    "name": "名前",
+    "birth": "生年月日",
+    "email": "メールアドレス",
+    "phone": "電話番号",
+    "company_name": "会社名",
+    "company_phone": "会社の電話番号",
+    "change_btn": "変更",
+    "delete_account_btn": "退会",
+    "message": {
+      "cur_pw": "現在のパスワードを入力してください。",
+      "new_pw": "新しいパスワードを入力してください。",
+      "pw_validity": "英文字、数字、特殊文字を各1つずつ含め、8～32文字で入力してください。",
+      "new_pw_check": "新しいパスワードを再度入力してください。",
+      "pw_wrong": "パスワードが一致しません。",
+      "company_name": "会社名を入力してください。",
+      "company_phone": "会社の電話番号を入力してください。",
+      "name": "名前を入力してください。",
+      "phone": "電話番号を入力してください。",
+      "phone_wrong": "正しい電話番号形式で入力してください。",
+      "id": "IDを入力してください。",
+      "change_success": "変更が完了しました。",
+      "error": "エラーが発生し、処理を完了できませんでした。しばらくしてから再度お試しください。問題が解決しない場合は管理者にお問い合わせください。"
+    },
+    "delete_account": {
+      "check_title": "退会確認",
+      "check_content": "本当に退会しますか？すべての情報が削除されます。",
+      "check_ok_text": "確認",
+      "check_cancel_text": "キャンセル",
+      "success_title": "退会完了",
+      "success_content": "退会が正常に処理されました。",
+      "err_content1": "不明なエラーが発生しました。",
+      "err_content2": "退会処理中にエラーが発生しました。再度お試しください。"
+    }
+  },
+  "visit_request_status": {
+    "today": "今日",
+    "business_place_name": "事業所",
+    "name": "名前",
+    "card_number": "カード番号",
+    "will_visit": "訪問予定",
+    "purpose": "目的",
+    "total_visitors": "申請",
+    "total_visits": "発行",
+    "total_not_returns": "未回収",
+    "total_problems": "紛失/破損",
+    "count": "件",
+    "planned_visit": "訪問予定",
+    "planned_visit_subtitle": "本日訪問予定の訪問者リスト",
+    "visiting": "訪問中",
+    "visiting_subtitle": "本日セキュリティカードを回収する必要がある訪問者リスト",
+    "visit_completed": "訪問完了",
+    "visit_completed_subtitle": "本日セキュリティカードを回収した訪問者リスト",
+    "unreturned_card": "カード未回収",
+    "lost_card": "カード紛失",
+    "damaged_card": "カード破損",
+
+    "unreturned_card_1": "未回収のセキュリティカード",
+    "unreturned_card_subtitle": "セキュリティカードが回収されていない訪問者リスト",
+    "lost_card_1": "紛失したセキュリティカード",
+    "lost_card_subtitle": "セキュリティカードを紛失した訪問者リスト",
+    "damaged_card_1": "破損したセキュリティカード",
+    "damaged_card_subtitle": "セキュリティカードが破損した訪問者リスト",
+    "list": {
+      "no_matching_visitors": "一致する訪問者はいません。",
+      "access_security_card": "入場セキュリティカード",
+      "visit_time": "訪問時間",
+      "manager_name": "担当者",
+      "car": "車両番号",
+      "birth": "生年月日",
+      "phone": "電話番号",
+      "company_name": "会社名",
+      "purpose": "目的",
+      "digital_devices": "デジタル機器",
+      "no_devices": "登録されたデジタル機器はありません。",
+      "mount": "個"
+    },
+    "popup": {
+      "access_security_card_info": "出入セキュリティカード情報",
+      "status": "状態",
+      "assigned": "発行処理",
+      "lose_cancel": "紛失取消",
+      "return": "回収処理",
+      "damage": "破損処理",
+      "lost": "回収処理",
+      "list": "履歴",
+      "no_list": "履歴がありません。",
+      "dialog": {
+        "really": "本当に",
+        "do_it": "処理を行いますか？",
+        "enter_card_number": "カード番号を入力してください。",
+        "card_number": "カード番号",
+        "cancel": "キャンセル",
+        "ok": "確認"
+      },
+      "message": {
+        "error": "エラーが発生し、処理を完了できませんでした。しばらくしてから再度お試しください。問題が解決しない場合は管理者にお問い合わせください。",
+        "card_number_wrong": "カード番号が一致しません。"
+      }
+    }
+  },
+  "visitor_info": {
+    "visitor": "訪問者",
+    "add": "追加",
+    "edit": "編集",
+    "name": "名前",
+    "birth": "生年月日",
+    "phone": "電話番号",
+    "email": "メールアドレス",
+    "company_name": "会社名",
+    "company_phone": "会社連絡先",
+    "blood_type": "血液型",
+    "none": "不明",
+    "car": "訪問者の車両番号",
+    "memo": "メモ",
+    "digital_devices": {
+      "title": "デジタル機器",
+      "none": "なし",
+      "type": "種類",
+      "model_name": "モデル名",
+      "serial_number": "モデルシリアル番号"
+    },
+    "message": {
+      "name": "名前を入力してください。",
+      "email": "メールアドレスを入力してください。",
+      "company_name": "会社名を入力してください。",
+      "car": "車両を持参される場合は車両番号を入力してください。",
+      "field_error": "必須項目を全て入力してください: ",
+      "digital_type_error": "デジタル機器の種類を選択してください。",
+      "model_name_error": "デジタル機器のモデル名を入力してください。"
+    },
+    "btn": {
+      "add": "追加",
+      "edit": "編集"
+    },
+    "validation": {
+      "phone_required": "電話番号を入力してください。",
+      "invalid_phone_number": "正しい電話番号の形式ではありません。",
+      "email_required": "メールアドレスを入力してください。",
+      "invalid_email": "正しいメールアドレスの形式ではありません。",
+      "company_phone_required": "会社の連絡先を入力してください。",
+      "invalid_company_phone": "正しい会社の連絡先の形式ではありません。"
+    }
+  },
+  "group_management": {
+    "title": "グループ管理",
+    "in_group_user": "グループに所属しているユーザー",
+    "out_group_user": "グループに所属していないユーザー",
+    "in_group": "グループに追加",
+    "out_group": "グループから削除",
+    "search_placeholder": "IDまたは名前"
+  },
+  "user": {
+    "type": {
+      "employee": "Employee",
+      "native": "Native",
+      "foreigner": "Foreigner"
+    }
+  },
+  "footer": {
+    "term": "利用規約",
+    "privacy": "個人情報保護方針",
+    "ulvac_korea": "韓国アルバック株式会社 代表取締役: キム・ソンギル",
+    "business_registration_number": "事業者登録番号: 214-81-90298",
+    "address": "住所: 5, Hansan-gil, Cheongbuk-eup, Pyeongtaek-si, Gyeonggi-do, Republic of Korea",
+    "copyright": "COPYRIGHT©2025 韓国アルバック株式会社 ALL RIGHTS RESERVED"
+  },
+  "find_id_page": {
+    "title": "ID検索",
+    "is_native_foreigners": "国内/外国",
+    "native": "国内",
+    "foreigner": "外国",
+    "name": "名前",
+    "email": "メールアドレス",
+    "phone": "携帯電話",
+    "placeholder": {
+      "name": "名前を入力してください。",
+      "phone": "電話番号を入力してください。",
+      "phone_wrong": "正しい電話番号形式を入力してください。",
+      "id": "IDを入力してください。",
+      "pw": "パスワードを入力してください。",
+      "pw_check": "もう一度パスワードを入力してください。",
+      "birth": "生年月日",
+      "email": "メールアドレスを入力してください。",
+      "email_wrong": "正しいメールアドレス形式を入力してください。",
+      "error": "不明なエラーが発生しました。"
+    },
+
+    "btn": {
+      "ok": "確認",
+      "log_in": "ログイン",
+      "reset_password": "パスワードをリセット"
+    },
+    "content1": "あなたのIDは",
+    "content2": "です。"
+  },
+  "find_pw_page": {
+    "title": "パスワード再設定",
+    "is_native_foreigners": "国内/外国",
+    "native": "国内",
+    "foreigner": "外国",
+    "name": "名前",
+    "id": "ID",
+    "phone": "電話番号",
+    "email": "メール",
+    "certify_code": "認証コード",
+    "pw": "パスワード",
+    "pw_check": "パスワード確認",
+    "message": {
+      "name": "名前を入力してください。",
+      "id": "IDを入力してください。",
+      "phone": "電話番号を入力してください。",
+      "phone_wrong": "有効な電話番号を入力してください。",
+      "email": "メールアドレスを入力してください。",
+      "email_wrong": "有効なメールアドレスを入力してください。",
+      "certify_code": "認証コードを入力してください。",
+      "pw": "パスワードを入力してください。",
+      "pw_validity": "英字、数字、特殊文字をそれぞれ1つ以上含む8～32文字で入力してください。",
+      "pw_check": "もう一度パスワードを入力してください。",
+      "pw_wrong": "パスワードが一致しません。",
+
+      "completed1": "パスワードのリセットが完了しました。",
+      "completed2": "提供されたパスワードで",
+      "completed3": "ログインしてください。",
+
+      "error": "不明なエラーが発生しました。"
+    },
+    "btn": {
+      "certify": "認証",
+      "next": "次へ",
+      "reset": "再設定",
+      "log_in": "ログイン"
+    }
+  },
+
+  "sign_up_steps": {
+    "agree_terms": "利用規約に同意",
+    "enter_inform": "会員情報を入力",
+    "complete": "登録完了"
+  },
+  "sign_up_agree_terms": {
+    "term": "利用規約",
+    "term_loading": "利用規約を読み込んでいます...",
+    "privacy": "個人情報の収集と利用への同意",
+    "privacy_loading": "プライバシーポリシーを読み込んでいます...",
+    "btn": {
+      "before": "前へ",
+      "after": "次へ",
+      "agree": "同意する",
+      "disagree": "同意しない"
+    }
+  },
+  "sign_up_enter_inform": {
+    "enter_inform": "会員情報",
+    "is_native_foreigners": "国内/外国",
+    "native": "国内",
+    "foreigner": "外国",
+    "id": "ID",
+    "pw": "パスワード",
+    "pw_check": "パスワード確認",
+    "name": "名前",
+    "birth": "生年月日",
+    "email": "メールアドレス",
+    "phone": "電話番号",
+    "company_name": "会社名",
+    "company_phone": "会社連絡先",
+    "certify": "認証",
+    "certify_code": "認証コード",
+    "certify_code_time": "認証コード有効時間",
+    "ok": "確認",
+
+    "btn": {
+      "before": "前へ",
+      "join": "登録する"
+    },
+    "placeholder": {
+      "id": "IDを入力してください。",
+      "pw": "パスワードを入力してください。",
+      "pw_check": "もう一度パスワードを入力してください。",
+      "name": "名前を入力してください。",
+      "birth": "生年月日",
+      "email": "メールアドレスを入力してください。",
+      "certify_code": "認証コードを入力してください。",
+      "phone": "電話番号を入力してください。",
+      "company_name": "会社名を入力してください。",
+      "company_phone": "会社連絡先を入力してください。"
+    },
+    "message": {
+      "pw_validity": "英字、数字、特殊文字をそれぞれ1つ含めて、8〜32文字である必要があります。",
+      "pw_wrong": "パスワードが一致しません。",
+      "email_wrong": "正しいメール形式で入力してください。",
+      "certify_code_finish": "認証が完了しました。",
+      "phone_wrong": "正しい電話番号形式で入力してください。",
+      "sign_up_err_msg": "アカウント申請中にエラーが発生しました。もう一度お試しください。",
+      "email_certify_success_content": "メールが正常に認証されました。",
+      "phone_certify_success_content": "電話番号が正常に認証されました。",
+      "email_certify_wrong": "メール認証に失敗しました。",
+      "phone_certify_wrong": "電話認証に失敗しました。"
+    }
+  },
+  "sign_up_complete": {
+    "complete": "会員登録完了",
+    "section1": "の会員登録が",
+    "section2": "正常に完了しました。",
+    "login": "ログインする"
+  },
+  "system_settings": {
+    "file": {
+      "choose_file": "ファイルを選択",
+      "no_file": "選択されたファイルはありません"
+    },
+    "template_description": {
+      "verify_code": "会員登録やパスワードリセットなどの認証コードを送信するメール（受信者: 来訪者）",
+      "visit_request": "来訪申請時に承認依頼を送信するメール（受信者: 担当者）",
+      "visit_request_approve": "来訪申請が承認されたことを通知するメール（受信者: 来訪者） *添付ファイル含む",
+      "visit_request_reject": "来訪申請が拒否されたことを通知するメール（受信者: 来訪者）",
+      "visit_request_cancel": "来訪申請がキャンセルされたことを通知するメール（受信者: 担当者）",
+      "security_card_issue": "セキュリティカードの紛失/破損を通知するメール（受信者: 総務部）",
+      "password_reset": "ユーザーのパスワードが初期化された際、新しいパスワードを送信するメール（受信者: ユーザー）"
+    },
+    "title": "システム設定",
+    "manual": "マニュアル",
+    "faq": "FAQ",
+    "email_template": "メールテンプレート",
+    "email_template_btn": {
+      "verify_code": "認証コード",
+      "visit_request": "訪問申請",
+      "visit_request_approve": "承認処理",
+      "visit_request_reject": "却下処理",
+      "visit_request_cancel": "キャンセル処理",
+      "card_issue": "カード発行",
+      "password_reset": "パスワード初期化"
+    },
+    "native": "国内",
+    "foreigner": "外国人",
+    "save": "保存",
+    "send_test_mail_to_me": "テストメールを自分に送信",
+    "mail_title": "メールの件名",
+    "no_upload_file": "アップロードされたファイルはありません",
+
+    "ko": "韓国語",
+    "en": "英語",
+    "ja": "日本語"
+  },
+  "policy_management": {
+    "title": "ポリシー管理",
+    "term": "利用規約",
+    "privacy": "プライバシーポリシー",
+    "security": "セキュリティ誓約書",
+    "save_term": "利用規約を保存",
+    "save_privacy": "プライバシーポリシーを保存",
+    "save_security": "セキュリティ誓約書を保存",
+    "privacy_dialog_content1": "プライバシーポリシーの新しいバージョンを追加しますか？",
+    "privacy_dialog_content2": "本当によろしいですか？",
+    "cancel": "キャンセル",
+    "ok": "確認",
+    "cur_version": "現在のバージョン",
+    "new_version": "新しいバージョン",
+    "ko": "韓国語",
+    "en": "英語",
+    "ja": "日本語"
+  },
+  "item_management": {
+    "title": "項目管理",
+    "item_table": {
+      "business": {
+        "title": "事業所"
+      },
+      "device": {
+        "title": "デジタルデバイス"
+      },
+      "name_ko": "名前（韓国語）",
+      "name_en": "名前（英語）",
+      "name_ja": "名前（日本語）"
+    }
+  },
+  "account_management": {
+    "title": "ユーザー管理",
+    "external_user_notification": "外部ユーザー通知",
+    "external_user": "外部ユーザー",
+    "chart": {
+      "id": "ID",
+      "national_foreigner": "国内/外国人",
+      "name": "名前",
+      "company_name": "会社名",
+      "email": "メール",
+      "phone": "電話"
+    },
+    "popup": {
+      "id": "ID",
+      "status": "状態",
+      "national": "国内",
+      "foreigner": "外国人",
+      "name": "名前",
+      "company_info": "会社情報",
+      "email": "メール",
+      "phone": "電話",
+      "penalty": "ペナルティ",
+      "no_company_number": "連絡先情報がありません",
+      "activation": "アクティベーション",
+      "deactivation": "停止"
+    },
+    "password_reset": "パスワードリセット",
+    "search_placeholder": "ID または 名前"
+  },
+  "employee_notification": {
+    "title": "従業員通知設定",
+    "ulvac_employee": "アルバック従業員",
+    "chart": {
+      "id": "ID",
+      "name": "名前",
+      "email": "メール",
+      "notification": "通知",
+      "notification_editor": "通知修正者",
+      "phone": "携帯電話"
+    },
+    "search_placeholder": "IDまたは名前"
+  },
+  "visitor": {
+    "security_card": {
+      "status": {
+        "assigned": "Assigned",
+        "issued": "Issued",
+        "returned": "Returned",
+        "lost": "Lost",
+        "damaged": "Damaged",
+        "lose_canceled": "紛失取り消し"
+      }
+    }
+  },
+
+  "visit_request": {
+    "applicant_information": "申請者情報",
+    "applicant_information_list": {
+      "birth": "生年月日",
+      "phone_number": "電話番号",
+      "company_name": "会社名",
+      "company_phone_number": "会社連絡先"
+    },
+    "visit_request_information": "訪問申請情報",
+    "visit_request_information_list": {
+      "business_place_name": "事業所",
+      "visit_date": "訪問日",
+      "manager_name": "管理者メール",
+      "visit_time": "訪問時間",
+      "purpose": "目的",
+      "manager_name_ok_msg": "担当者が確認されました。"
+    },
+    "visitor_information": "訪問者情報",
+    "visitor_information_list": {
+      "birth": "生年月日",
+      "blood_type": "血液型",
+      "company_phone_number": "会社連絡先",
+      "company_name": "会社名",
+      "company": "会社",
+      "email": "E-Mail",
+      "phone_number": "電話番号",
+      "car_number": "訪問車両番号",
+      "note": "メモ",
+      "digital_devices": {
+        "digital_devices": "デジタル機器",
+        "digital_device_name": "種類",
+        "model_name": "モデル名",
+        "serial_number": "シリアル番号",
+        "no_devices": "登録されたデジタル機器はありません。",
+        "choose_devices": "デジタル機器を選択してください。",
+        "mount": "個"
+      },
+      "button_name": {
+        "request": "申請",
+        "edit": "変更",
+        "cancel": "申請取消",
+        "approve": "承認",
+        "reject": "却下",
+        "re_request": "再申請"
+      }
+    },
+    "security_modal": {
+      "loading": "セキュリティ誓約の条項を読み込んでいます...",
+      "security_agree": "セキュリティ契約条項への同意",
+      "security_content_1": "本サービスの利用規約に同意する必要があります。",
+      "security_content_2": "同意しますか？",
+      "agree": "同意"
+    },
+    "reject_reason": "拒否理由",
+    "error_messages": {
+      "business_place_required": "事業所を選択してください。",
+      "visit_date_required": "訪問日を選択してください。",
+      "manager_required": "担当者を選択してください。",
+      "visit_time_required": "訪問時間を選択してください。",
+      "purpose_required": "目的を入力してください。",
+      "visitors_required": "訪問者がいません。",
+      "request_success": "訪問申請が完了しました。",
+      "request_warn": "訪問申請中に予期しない応答を受け取りました。",
+      "request_change_success": "変更が適用されました。",
+      "request_change_warn": "変更の適用中に問題が発生しました。もう一度お試しください。",
+      "request_cancel_success": "申請がキャンセルされました。",
+      "request_cancel_warn": "申請のキャンセル中に問題が発生しました。もう一度お試しください。",
+      "error": "システムエラーが発生しました。後ほど再度お試しください。"
+    }
+  },
+  "visit_request_list": {
+    "visit_request_list": "申請一覧",
+    "manager_name": "担当者",
+    "requester": "申請者",
+    "card_number": "カード番号",
+    "person_matches": "人一致",
+    "purpose": "目的",
+    "visit_date": "訪問日",
+    "status": "ステータス",
+    "reject_reason": "却下理由",
+    "status_list": {
+      "all": "全て",
+      "reject": "却下",
+      "approve": "承認済み",
+      "cancel": "キャンセル",
+      "request": "申請中",
+      "request_complete": "申請完了"
+    },
+    "search": "検索",
+    "send_mail": "承認リストを_メールで送信",
+    "send_mail_success": "メール送信完了",
+    "send_mail_fail": "メール送信失敗",
+    "no_request_data": "リクエスト履歴はありません。"
+  }
+}

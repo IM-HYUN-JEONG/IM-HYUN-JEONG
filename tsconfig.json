@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "removeComments": true, // 컴파일 시 주석 제거
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "incremental": true,
+    "paths": {
+      "@res/*": ["public/res/*"],
+      "@component/*": ["src/component/*"],
+      "@util/*": ["utils/*"]
+    },
+    "jsxImportSource": "@emotion/react", //  for emotion css
+    "types": ["node", "webpack-env"] // for locale에서 webpack, node의 디렉토리 순회
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/_document.tsx", "pages/_app.tsx", "pages/404.js", "src"],
+  "exclude": ["node_modules", ".next"]
+}

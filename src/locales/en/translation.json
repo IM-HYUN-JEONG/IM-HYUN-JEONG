@@ -1,0 +1,593 @@
+{
+  "ulvac": "ULVAC",
+  "ulvac_korea": "ULVAC KOREA",
+  "visitor_registration_system": "Visitor Registration System",
+  "login": "Log in",
+  "username": "Username",
+  "password": "Password",
+  "sign_up": "Sign Up",
+  "find_id": "Find ID",
+  "reset_password": "Reset Password",
+  "remember_username": "Remember Username",
+  "edit_user_info_title": "User Information Management",
+  "login_error": "Invalid login information.",
+  "manual": "Manual",
+  "datepicker_placeholder": "Year-Month-Day",
+
+  "validation": {
+    "required": "This field is required."
+  },
+  "not_found_page": {
+    "title": "Page Not Found.",
+    "sub_title1": "The page you requested may have been removed,",
+    "sub_title2": "or it does not exist.",
+    "go_back": "Go Back"
+  },
+
+  "item_popup": {
+    "add_edit": "Add/Edit",
+    "name_ko": "Name (Korean)",
+    "name_en": "Name (English)",
+    "name_ja": "Name (Japanese)",
+    "ask_delete": "Do you want to delete?",
+    "btn": {
+      "change": "Change",
+      "delete": "Delete",
+      "add": "Add",
+      "cancel": "Cancel",
+      "ok": "OK"
+    }
+  },
+  "menu": {
+    "settings": {
+      "settings": "Settings",
+      "system": "System Settings",
+      "policy": "Policy Management",
+      "item": "Item Management",
+      "group": "Group Management",
+      "user": "User Management",
+      "employee": "Employee Notification Settings"
+    },
+    "visit_request": "Visit Request",
+    "visit_history": "Visit Request History",
+    "visit_status": "Visit Request Status",
+    "manual": "Manual",
+    "faq": "FAQ",
+    "notice": "Notice"
+  },
+  "edit_user_info": {
+    "title": "My Information",
+    "is_native_foreigners": "Native/Foreigner",
+    "native": "Native",
+    "foreigner": "Foreigner",
+    "id": "ID",
+    "cur_pw": "Current Password",
+    "new_pw": "New Password",
+    "new_pw_check": "Confirm New Password",
+    "name": "Name",
+    "birth": "Date of Birth",
+    "email": "Email",
+    "phone": "Phone",
+    "company_name": "Company Name",
+    "company_phone": "Company Phone",
+    "change_btn": "Change",
+    "delete_account_btn": "Delete Account",
+    "message": {
+      "cur_pw": "Please enter your current password.",
+      "new_pw": "Please enter your new password.",
+      "pw_validity": "Must include at least one letter, one number, and one special character, and be 8–32 characters long.",
+      "new_pw_check": "Please re-enter your new password.",
+      "pw_wrong": "The passwords do not match.",
+      "company_name": "Please enter the company name.",
+      "company_phone": "Please enter the company phone.",
+      "name": "Please enter your name.",
+      "phone": "Please enter your phone number.",
+      "phone_wrong": "Please enter a valid phone number.",
+      "id": "Please enter your ID.",
+      "change_success": "Successfully changed.",
+      "error": "An error occurred and the process could not be completed. Please try again later. If the issue persists, contact the administrator."
+    },
+    "delete_account": {
+      "check_title": "Confirm Account Deletion",
+      "check_content": "Are you sure you want to delete your account? All information will be deleted.",
+      "check_ok_text": "Confirm",
+      "check_cancel_text": "Cancel",
+      "success_title": "Account Deletion Complete",
+      "success_content": "Your account has been successfully deleted.",
+      "err_content1": "An unknown error occurred.",
+      "err_content2": "An error occurred while deleting your account. Please try again."
+    }
+  },
+
+  "visit_request_status": {
+    "today": "Today",
+    "business_place_name": "Business Place",
+    "name": "Name",
+    "card_number": "Card Number",
+    "will_visit": "Will Visit",
+    "purpose": "Purpose",
+    "total_visitors": "Requested",
+    "total_visits": "Issued",
+    "total_not_returns": "Unreturned",
+    "total_problems": "Lost/Damaged",
+    "count": "Cases",
+    "planned_visit": "Planned Visit",
+    "planned_visit_subtitle": "List of visitors scheduled to visit today",
+    "visiting": "Currently Visiting",
+    "visiting_subtitle": "List of visitors whose access cards need to be collected today",
+    "visit_completed": "Visit Completed",
+    "visit_completed_subtitle": "List of visitors whose access cards were collected today",
+    "unreturned_card": "Card Not Returned",
+    "lost_card": "Card Lost",
+    "damaged_card": "Card Damaged",
+
+    "unreturned_card_1": "Unreturned Access Card",
+    "unreturned_card_subtitle": "List of visitors who did not return their access cards",
+    "lost_card_1": "Lost Access Card",
+    "lost_card_subtitle": "List of visitors who lost their access cards",
+    "damaged_card_1": "Damaged Access Card",
+    "damaged_card_subtitle": "List of visitors with damaged access cards",
+
+    "list": {
+      "no_matching_visitors": "There are no matching visitors.",
+      "access_security_card": "Access Security Card",
+      "visit_time": "Visit Time",
+      "manager_name": "Manager",
+      "car": "Car Number",
+      "birth": "Date of Birth",
+      "phone": "Phone Number",
+      "company_name": "Company Name",
+      "purpose": "Purpose",
+      "digital_devices": "Digital Devices",
+      "no_devices": "No registered digital devices.",
+      "mount": "item(s)"
+    },
+    "popup": {
+      "access_security_card_info": "Access Security Card Information",
+      "status": "Status",
+      "assigned": "Issue Processed",
+      "lose_cancel": "Loss Cancelled",
+      "return": "Return Processed",
+      "damage": "Damage Processed",
+      "lost": "Return Processed",
+      "list": "History",
+      "no_list": "No history available.",
+      "dialog": {
+        "really": "Really",
+        "do_it": "Would you like to proceed?",
+        "enter_card_number": "Please enter the card number.",
+        "card_number": "Card Number",
+        "cancel": "Cancel",
+        "ok": "Confirm"
+      },
+      "message": {
+        "error": "An error occurred and the process could not be completed. Please try again later. If the issue persists, contact the administrator.",
+        "card_number_wrong": "The card number does not match."
+      }
+    }
+  },
+
+  "visitor_info": {
+    "visitor": "Visitor",
+    "add": "Add",
+    "edit": "Edit",
+    "name": "Name",
+    "birth": "Date of Birth",
+    "phone": "Phone Number",
+    "email": "Email",
+    "company_name": "Company Name",
+    "company_phone": "Company Contact",
+    "blood_type": "Blood Type",
+    "none": "Unknown",
+    "car": "Visitor's Vehicle Number",
+    "memo": "Memo",
+    "digital_devices": {
+      "title": "Digital Devices",
+      "none": "None",
+      "type": "Type",
+      "model_name": "Model Name",
+      "serial_number": "Model Serial Number"
+    },
+    "message": {
+      "name": "Please enter the name.",
+      "email": "Please enter the email.",
+      "company_name": "Please enter the company name.",
+      "car": "If bringing a vehicle, please enter the vehicle number.",
+      "field_error": "Please fill in all required fields: ",
+      "digital_type_error": "Please select the type of digital device.",
+      "model_name_error": "Please enter the digital device model name."
+    },
+    "btn": {
+      "add": "Add",
+      "edit": "Edit"
+    },
+    "validation": {
+      "phone_required": "Please enter your phone number.",
+      "invalid_phone_number": "The phone number format is incorrect.",
+      "email_required": "Please enter your email.",
+      "invalid_email": "Invalid email format.",
+      "company_phone_required": "Please enter your company phone number.",
+      "invalid_company_phone": "Invalid company phone number format."
+    }
+  },
+  "group_management": {
+    "title": "Group Management",
+    "in_group_user": "Users in the Group",
+    "out_group_user": "Users not in the Group",
+    "in_group": "Add to Group",
+    "out_group": "Remove from Group",
+    "search_placeholder": "ID or Name"
+  },
+  "user": {
+    "type": {
+      "employee": "Employee",
+      "native": "Native",
+      "foreigner": "Foreigner"
+    }
+  },
+  "footer": {
+    "term": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "ulvac_korea": "ULVAC Korea Co., Ltd. CEO: Sun-Kil Kim",
+    "business_registration_number": "Business Registration Number: 214-81-90298",
+    "address": "Address: 5, Hansan-gil, Cheongbuk-eup, Pyeongtaek-si, Gyeonggi-do, Republic of Korea",
+    "copyright": "COPYRIGHT©2025 ULVAC Korea Co., Ltd. ALL RIGHTS RESERVED"
+  },
+  "find_id_page": {
+    "title": "Find ID",
+    "is_native_foreigners": "Domestic/Foreign",
+    "native": "Domestic",
+    "foreigner": "Foreign",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Mobile Phone",
+    "placeholder": {
+      "name": "Please enter your name.",
+      "phone": "Please enter your phone number.",
+      "phone_wrong": "Please enter a valid phone number format.",
+      "id": "Please enter your ID.",
+      "pw": "Please enter your password.",
+      "pw_check": "Please re-enter your password.",
+      "birth": "Date of Birth",
+      "email": "Please enter your email.",
+      "email_wrong": "Please enter a valid email format.",
+      "error": "An unknown error has occurred."
+    },
+    "btn": {
+      "ok": "OK",
+      "log_in": "Log In",
+      "reset_password": "Reset Password"
+    },
+    "content1": "'s ID is",
+    "content2": ""
+  },
+  "find_pw_page": {
+    "title": "Password Reset",
+    "is_native_foreigners": "Domestic/Foreign",
+    "native": "Domestic",
+    "foreigner": "Foreign",
+    "name": "Name",
+    "id": "ID",
+    "phone": "Phone",
+    "email": "Email",
+    "certify_code": "Verification Code",
+    "pw": "Password",
+    "pw_check": "Confirm Password",
+    "message": {
+      "name": "Please enter your name.",
+      "id": "Please enter your ID.",
+      "phone": "Please enter your phone number.",
+      "phone_wrong": "Please enter a valid phone number.",
+      "email": "Please enter your email.",
+      "email_wrong": "Please enter a valid email address.",
+      "certify_code": "Please enter the verification code.",
+      "pw": "Please enter your password.",
+      "pw_validity": "Must contain at least one letter, number, and special character, and be 8-32 characters long.",
+      "pw_check": "Please re-enter your password.",
+      "pw_wrong": "Passwords do not match.",
+
+      "completed1": "Password reset completed.",
+      "completed2": "Use the provided password to",
+      "completed3": "log in.",
+
+      "error": "An unknown error occurred."
+    },
+    "btn": {
+      "certify": "Verify",
+      "next": "Next",
+      "reset": "Reset",
+      "log_in": "Log In"
+    }
+  },
+
+  "sign_up_steps": {
+    "agree_terms": "Agree to terms",
+    "enter_inform": "Enter member information",
+    "complete": "Sign Up Complete"
+  },
+  "sign_up_agree_terms": {
+    "term": "Terms of Service",
+    "term_loading": "Loading the Terms of Service...",
+    "privacy": "Consent to Collect and Use Personal Information",
+    "privacy_loading": "Loading the Privacy Policy...",
+    "btn": {
+      "before": "Previous",
+      "after": "Next",
+      "agree": "Agree",
+      "disagree": "Disagree"
+    }
+  },
+  "sign_up_enter_inform": {
+    "enter_inform": "User Information",
+    "is_native_foreigners": "Domestic/Foreign",
+    "native": "Domestic",
+    "foreigner": "Foreign",
+    "id": "ID",
+    "pw": "Password",
+    "pw_check": "Confirm Password",
+    "name": "Name",
+    "birth": "Date of Birth",
+    "email": "Email",
+    "phone": "Phone Number",
+    "company_name": "Company Name",
+    "company_phone": "Company Contact",
+    "certify": "Verify",
+    "certify_code": "Verification Code",
+    "certify_code_time": "Verification Code Expiry Time",
+    "ok": "OK",
+
+    "btn": {
+      "before": "Previous",
+      "join": "Sign Up"
+    },
+    "placeholder": {
+      "id": "Please enter your ID.",
+      "pw": "Please enter your password.",
+      "pw_check": "Please re-enter your password.",
+      "name": "Please enter your name.",
+      "birth": "Date of Birth",
+      "email": "Please enter your email.",
+      "certify_code": "Enter the verification code.",
+      "phone": "Please enter your phone number.",
+      "company_name": "Please enter your company name.",
+      "company_phone": "Please enter your company contact."
+    },
+    "message": {
+      "pw_validity": "Must include at least one letter, one number, and one special character, and be 8-32 characters long.",
+      "pw_wrong": "Passwords do not match.",
+      "email_wrong": "Please enter a valid email format.",
+      "certify_code_finish": "Certification completed.",
+      "phone_wrong": "Please enter a valid phone number format.",
+      "sign_up_err_msg": "An error occurred during account registration. Please try again.",
+      "email_certify_success_content": "Email has been successfully verified.",
+      "phone_certify_success_content": "Phone number has been successfully verified.",
+      "email_certify_wrong": "Email verification failed.",
+      "phone_certify_wrong": "Phone verification failed."
+    }
+  },
+  "sign_up_complete": {
+    "complete": "Sign-Up Complete",
+    "section1": "Your sign-up",
+    "section2": "has been successfully completed.",
+    "login": "Log In"
+  },
+  "system_settings": {
+    "file": {
+      "choose_file": "Choose File",
+      "no_file": "No file selected"
+    },
+    "template_description": {
+      "verify_code": "Email sent for sending verification codes for registration, password reset, etc. (Recipient: Visitor)",
+      "visit_request": "Email sent to request approval for visit applications. (Recipient: Person in charge)",
+      "visit_request_approve": "Email notifying that a visit application has been approved. (Recipient: Visitor) *Includes attachment",
+      "visit_request_reject": "Email notifying that a visit application has been rejected. (Recipient: Visitor)",
+      "visit_request_cancel": "Email notifying that a visit application has been canceled. (Recipient: Person in charge)",
+      "security_card_issue": "Email notifying about a lost/damaged security card. (Recipient: General Affairs Department)",
+      "password_reset": "Email sent with the new password when the user's password has been reset. (Recipient: User)"
+    },
+    "title": "System Settings",
+    "manual": "Manual",
+    "faq": "FAQ",
+    "email_template": "Email Template",
+    "email_template_btn": {
+      "verify_code": "Verification Code",
+      "visit_request": "Visit Request",
+      "visit_request_approve": "Approval",
+      "visit_request_reject": "Rejection",
+      "visit_request_cancel": "Cancellation",
+      "card_issue": "Card Issue",
+      "password_reset": "Password Reset"
+    },
+    "native": "Native",
+    "foreigner": "Foreigner",
+    "save": "Save",
+    "send_test_mail_to_me": "Send Test Mail to Me",
+    "mail_title": "Mail Title",
+    "no_upload_file": "No Uploaded File",
+
+    "ko": "Korean",
+    "en": "English",
+    "ja": "Japanese"
+  },
+  "policy_management": {
+    "title": "Policy Management",
+    "term": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "security": "Security Pledge",
+    "save_term": "Save Terms of Service",
+    "save_privacy": "Save Privacy Policy",
+    "save_security": "Save Security Pledge",
+    "privacy_dialog_content1": "Do you want to add a new version of the Privacy Policy?",
+    "privacy_dialog_content2": "Are you sure?",
+    "cancel": "Cancel",
+    "ok": "OK",
+    "cur_version": "Current Version",
+    "new_version": "New Version",
+    "ko": "Korean",
+    "en": "English",
+    "ja": "Japanese"
+  },
+  "item_management": {
+    "title": "Item Management",
+    "item_table": {
+      "business": {
+        "title": "Business"
+      },
+      "device": {
+        "title": "Digital Device"
+      },
+      "name_ko": "Name (Korean)",
+      "name_en": "Name (English)",
+      "name_ja": "Name (Japanese)"
+    }
+  },
+  "account_management": {
+    "title": "User Management",
+    "external_user_notification": "External User Notifications",
+    "external_user": "External User",
+    "chart": {
+      "id": "ID",
+      "national_foreigner": "National/Foreigner",
+      "name": "Name",
+      "company_name": "Company Name",
+      "email": "Email",
+      "phone": "Phone"
+    },
+    "popup": {
+      "id": "ID",
+      "status": "Status",
+      "national": "National",
+      "foreigner": "Foreigner",
+      "name": "Name",
+      "company_info": "Company Information",
+      "email": "Email",
+      "phone": "Phone",
+      "penalty": "Penalty",
+      "no_company_number": "No Number",
+      "activation": "Activation",
+      "deactivation": "Deactivation"
+    },
+    "password_reset": "Password Reset",
+    "search_placeholder": "ID or Name"
+  },
+  "employee_notification": {
+    "title": "Employee Notification Settings",
+    "ulvac_employee": "ULVAC Employee",
+    "chart": {
+      "id": "ID",
+      "name": "Name",
+      "email": "Email",
+      "notification": "Notification",
+      "notification_editor": "Notification Editor",
+      "phone": "Phone"
+    },
+    "search_placeholder": "ID or Name"
+  },
+  "visitor": {
+    "security_card": {
+      "status": {
+        "assigned": "Assigned",
+        "issued": "Issued",
+        "returned": "Returned",
+        "lost": "Lost",
+        "damaged": "Damaged",
+        "lose_canceled": "Loss Cancelled"
+      }
+    }
+  },
+
+  "visit_request": {
+    "applicant_information": "Applicant Information",
+    "applicant_information_list": {
+      "birth": "Date of Birth",
+      "phone_number": "Phone Number",
+      "company_name": "Company Name",
+      "company_phone_number": "Company Contact"
+    },
+    "visit_request_information": "Visit Request Information",
+    "visit_request_information_list": {
+      "business_place_name": "Business Place",
+      "visit_date": "Visit Date",
+      "manager_name": "Manager Email",
+      "visit_time": "Visit Time",
+      "purpose": "Purpose",
+      "manager_name_ok_msg": "The manager has been confirmed."
+    },
+    "visitor_information": "Visitor Information",
+    "visitor_information_list": {
+      "birth": "Date of Birth",
+      "blood_type": "Blood Type",
+      "company_phone_number": "Company Contact",
+      "company_name": "Company Name",
+      "company": "Company",
+      "email": "E-Mail",
+      "phone_number": "Phone Number",
+      "car_number": "Visitor's Car Number",
+      "note": "Note",
+      "digital_devices": {
+        "digital_devices": "Digital Devices",
+        "digital_device_name": "Device Type",
+        "model_name": "Model Name",
+        "serial_number": "Serial Number",
+        "no_devices": "No registered digital devices.",
+        "choose_devices": "Please select digital devices.",
+        "mount": "item(s)"
+      },
+      "button_name": {
+        "request": "Request",
+        "edit": "Edit",
+        "cancel": "Cancel",
+        "approve": "Approve",
+        "reject": "Reject",
+        "re_request": "Reapply"
+      }
+    },
+    "security_modal": {
+      "loading": "Loading the security agreement terms...",
+      "security_agree": "Agreement to Security Terms",
+      "security_content_1": "You must agree to the terms of service to use this service.",
+      "security_content_2": "Do you agree?",
+      "agree": "Agree"
+    },
+    "reject_reason": "Rejection Reason",
+    "error_messages": {
+      "business_place_required": "Please select a business place.",
+      "visit_date_required": "Please select a visit date.",
+      "manager_required": "Please select a manager.",
+      "visit_time_required": "Please select a visit time.",
+      "purpose_required": "Please enter a purpose.",
+      "visitors_required": "No visitors found.",
+      "request_success": "Visit request has been completed.",
+      "request_warn": "Received an unexpected response during the visit request.",
+      "request_change_success": "Changes have been applied.",
+      "request_change_warn": "There was an issue applying changes. Please try again.",
+      "request_cancel_success": "Request has been canceled.",
+      "request_cancel_warn": "An issue occurred while canceling the request. Please try again.",
+      "error": "A system error occurred. Please try again later."
+    }
+  },
+  "visit_request_list": {
+    "visit_request_list": "Request List",
+    "manager_name": "Manager",
+    "requester": "Requester",
+    "card_number": "Card Number",
+    "person_matches": "person matches",
+    "purpose": "Purpose",
+    "visit_date": "Visit Date",
+    "status": "Status",
+    "reject_reason": "Rejection Reason",
+    "status_list": {
+      "all": "All",
+      "reject": "Rejected",
+      "approve": "Approved",
+      "cancel": "Cancelled",
+      "request": "Requested",
+      "request_complete": "Request Completed"
+    },
+    "search": "Search",
+    "send_mail": "Approval List_Send Email",
+    "send_mail_success": "Mail Sent Successfully",
+    "send_mail_fail": "Mail Sending Failed",
+    "no_request_data": "There is no request history."
+  }
+}

@@ -14,7 +14,7 @@ const CompanyRow = ({ name, homepageUrl, position, period }: any) => <Companyli 
 
 // 공통 컴포넌트: 기여/서비스 세부 정보를 다이얼로그로 렌더링
 const ExperienceDialog = ({ title, iconType, content }: any) => (
-  <ExtraInfoDialog iconType={iconType} dialogTitle={title} style={{ border: '1px solid red' }}>
+  <ExtraInfoDialog iconType={iconType} dialogTitle={title}>
     {content}
   </ExtraInfoDialog>
 );

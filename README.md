@@ -8,17 +8,13 @@
   </a>
 
   <h3 align="center">IM's portfolio</h3>
-
-  <p align="center">
-    An awesome Portfolio size that uses various Web API & library
-  </p>
 </p>
 <div align="center">  
   
 ![header](https://capsule-render.vercel.app/api?type=waving&color=auto&text=Welcome%20to%20Hyun's%20GitHub%20👋&animation=twinkling&fontSize=35&height=250)
 ---
 # Hello🤚🏻 I'm IM-HYUN-JEONG
-### My Resume Site(~ing) : https://im-hyun-jeong.vercel.app/
+### My Resume Site : https://im-hyun-jeong.vercel.app/
   
 ## 🛠Teck Stack🛠
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"/>   

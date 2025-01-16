@@ -9,7 +9,11 @@ interface StackChipProp {
 }
 
 export const StackChip = ({ title, stackList, size = 25 }: StackChipProp) => {
-  const [isImageVisible, setImageVisible] = useState(true);
+  const [errorIndices, setErrorIndices] = useState<Record<number, boolean>>({});
+
+  const handleImageError = (index: number) => {
+    setErrorIndices((prev) => ({ ...prev, [index]: true }));
+  };
 
   return (
     <div className="mt-2">
@@ -18,10 +22,17 @@ export const StackChip = ({ title, stackList, size = 25 }: StackChipProp) => {
         {stackList.map((stack, index) => (
           <Tooltip content={stack || 'Unknown Stack'} key={index}>
             <div className="flex flex-row items-center gap-1">
-              {isImageVisible && (
+              {errorIndices[index] ? (
                 <Image
-                  src={`/icons/${stack?.toLowerCase() || 'default'}.svg`} // stack이 없으면 default로 설정
-                  onError={(e) => (e.currentTarget.src = '/icons/default.svg')} // 이미지 로드 실패 시 대체
+                  src="/icons/default.svg" // 에러 발생 시 기본 이미지 사용
+                  height={size}
+                  width={size}
+                  alt="Default Icon"
+                />
+              ) : (
+                <Image
+                  src={`/icons/${stack?.toLowerCase() || 'default'}.svg`} // 초기 이미지 경로
+                  onError={() => handleImageError(index)} // 에러 발생 시 상태 업데이트
                   height={size}
                   width={size}
                   alt={stack || 'Unknown Stack'}

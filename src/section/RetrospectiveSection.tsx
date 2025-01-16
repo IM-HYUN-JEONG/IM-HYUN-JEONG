@@ -67,12 +67,7 @@ const RetrospectivedSection2021Item = () => {
         details={'기존 프로젝트 마이그레이션 및 기술 스택 익히기, 신뢰감를 얻은 중요했던 시기'}
         extraDetail={['1.', '2.', '3. ']}
       />
-      <RetrospectivedItem
-        retrospectivedName={'2Q'}
-        oneLineTitle={'직업을 무엇을 할지 생각하다.'}
-        details={'포트폴리오를 최신화하고 면접을 보러다녔으며, 현재 회사의 업무를 마무리하고 문서화에 힘씀.'}
-        extraDetail={['1.', '2.', '3. ']}
-      />
+      <RetrospectivedItem retrospectivedName={'2Q'} oneLineTitle={'직업을 무엇을 할지 생각하다.'} details={'TODO'} extraDetail={['1.', '2.', '3. ']} />
       <RetrospectivedItem
         retrospectivedName={'1Q'}
         oneLineTitle={'한양여자대학교 조교를 끝내다.'}
@@ -94,7 +89,7 @@ const RetrospectivedSection2022Item = () => {
       <RetrospectivedItem
         retrospectivedName={'3Q'}
         oneLineTitle={'취업준비를 했고, 면접보러 다니며 공부를 하다.'}
-        details={'기존 프로젝트 마이그레이션 및 기술 스택 익히기, 신뢰감를 얻은 중요했던 시기'}
+        details={'포트폴리오를 최신화하고 면접을 보러다녔다.'}
         extraDetail={['1.', '2.', '3. ']}
       />
       <RetrospectivedItem retrospectivedName={'2Q'} oneLineTitle={'React 프로젝트를 만들고, Next 공식독스를 보며 공부하다.'} details={'직접 '} extraDetail={['1.', '2.', '3. ']} />
@@ -150,12 +145,7 @@ const RetrospectivedSection2024Item = () => {
 
           <RetrospectivedItem retrospectivedName={'3Q'} oneLineTitle={'(주)아나사 - Web FrontEnd'} details={'1인 FE가 되기 위해 노력중'} extraDetail={['1.', '2.', '3. ']} />
           <RetrospectivedItem retrospectivedName={'2Q'} oneLineTitle={'(주)아나사 - Web FrontEnd로 입사하다.'} details={' 프론트엔드리드를 맡다.'} extraDetail={['1.', '2.', '3. ']} />
-          <RetrospectivedItem
-            retrospectivedName={'1Q'}
-            oneLineTitle={'좋은 개발자가 되기 위한 비개발적인 준비를 하다'}
-            details={'코드리뷰를 시작하고, 좋은 사수가 되기 위한 공부를 하고, 책 출판을 준비하다'}
-            extraDetail={['1.', '2.', '3. ']}
-          />
+          <RetrospectivedItem retrospectivedName={'1Q'} oneLineTitle={'좋은 개발자가 되기 위한 비개발적인 준비를 하다'} details={'TODO'} extraDetail={['1.', '2.', '3. ']} />
         </>
       }
     </YearCard>

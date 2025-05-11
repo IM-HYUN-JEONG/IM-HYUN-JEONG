@@ -31,8 +31,8 @@ export const SamplePlayerCard = ({ className, ...otherProps }: any) => {
             <div className="flex items-start justify-between">
               {/* 정보 및 직책 */}
               <div className="flex flex-col gap-0">
-                <div className="text-sm font-semibold text-foreground/80">(주)아나사에서 근무중</div>
-                <div className="mt-2 text-xs text-foreground/80">프론트엔드 리드</div>
+                <div className="text-sm font-semibold text-foreground/80">삼성반도체에서 근무중</div>
+                <div className="mt-2 text-xs text-foreground/80">프론트엔드 프리랜서 개발자</div>
                 <div className="text-xs font-medium ">유저에게 소리를 전달하는 모든 일</div>
               </div>
 

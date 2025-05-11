@@ -122,7 +122,7 @@ export default function IntroSection() {
         <CustomSectionTitle title={'Intro'} subTitle={'개발에 열정을 갖고 꾸준한 학습으로 성장하는 개발자 임현정 입니다'} />
         <div className="flex flex-col flex-wrap w-full justify-evenly">
           <div className="text-sm font-normal">
-            <strong>(주)아나사 에서 프론트엔드 리드 개발자로 일하고 있습니다</strong>
+            <strong>삼성반도체에서 프리랜서 React 개발자로 일하고 있습니다.</strong>
             <br />
             React를 중심으로 웹 개발에 주력하며, 사용자 경험(UX)을 최적화하는 데 열정을 가지고 있습니다.
             <br /> <br />
@@ -151,7 +151,7 @@ export default function IntroSection() {
             <br />
             고객의 요구를 정확히 반영한 결과물을 통해 신뢰를 얻고, 지속적으로 성장하는 개발자가 되는 것입니다. <br />
             새로운 도전을 두려워하지 않으며 항상 최상의 결과를 위해 노력합니다.
-            <br /> 현재 (주)아나사에서 B2B, B2C, 내부 툴 개발에 참여하고 있으며, 웹과 앱 개발을 전문으로 다루고 있습니다. <br />
+            <br /> 현재 프리랜서로 삼성반도체 상주 프로젝트를 진행하고 있습니다. <br />
             <strong>Frontend에 전문성을 두고, 점차적으로 백엔드 분야도 경험하고 있습니다.</strong>
           </div>
         </div>

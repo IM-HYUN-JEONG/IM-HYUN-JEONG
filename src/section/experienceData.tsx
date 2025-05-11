@@ -4,13 +4,52 @@ import { Titleli } from '@component/ul/Titleli';
 
 // 경험 데이터를 배열로 정의
 export const experienceData = [
+  /* 삼성 반도체 */
+  {
+    company: {
+      name: '(주)삼성반도체',
+      homepageUrl: 'https://anasa.co.kr/',
+      position: ['프리랜서', '프론트엔드 개발자'],
+      period: { start: '2025/03', end: new Date() }
+    },
+    tasks: ['(주)삼성반도체 ATC 시스템 개발'],
+    contribution: {
+      title: '(주)삼성반도체',
+      iconType: 'contribution',
+      content: (
+        <>
+          <Titleli title={'📚 What I learned'} list={['작성하기']} />
+          <Titleli title={'🎯 서비스 목표'} list={['작성하기']} />
+          <div className="flex flex-row justify-center">
+            <UrlChip title={'홈페이지'} url={''} />
+            <UrlChip title={'서비스 소개'} url={''} />
+          </div>
+          <StackChip title={'What I used'} stackList={['React', 'Typescript', 'StyledComponent', 'antd']} />
+        </>
+      )
+    },
+    service: {
+      title: 'Title 작성하기',
+      content: (
+        <>
+          <Titleli title={'📚 What I learned'} list={['작성하기']} />
+          <Titleli title={'🎯 서비스 목표'} list={['작성하기']} />
+          <div className="flex flex-row justify-center">
+            <UrlChip title={'홈페이지'} url={''} />
+            <UrlChip title={'서비스 소개'} url={''} />
+          </div>
+          <StackChip title={'What I used'} stackList={['React', 'Typescript', 'StyledComponent', 'antd']} />
+        </>
+      )
+    }
+  },
   /* (주)아나사 */
   {
     company: {
       name: '(주)아나사',
       homepageUrl: 'https://anasa.co.kr/',
       position: ['정규직', '프론트엔드 개발자', '프론트엔드 리드'],
-      period: { start: '2024/05', end: new Date() }
+      period: { start: '2024/05', end: '2025.03' }
     },
     tasks: ['(주)한국알박 내방신청 시스템 개발', '웹사이트(관리자페이지, 홈페이지) 개발', '계정 신청 페이지 개발'],
     contribution: {
@@ -29,7 +68,7 @@ export const experienceData = [
       )
     },
     service: {
-      title: 'AI 오디오 서비스 : 가우디오 스튜디오',
+      title: 'Title 작성하기',
       content: (
         <>
           <Titleli title={'📚 What I learned'} list={['작성하기']} />
@@ -68,7 +107,7 @@ export const experienceData = [
       )
     },
     service: {
-      title: 'AI 오디오 서비스 : 가우디오 스튜디오',
+      title: 'Title 작성하기',
       content: (
         <>
           <Titleli title={'📚 What I learned'} list={['작성하기']} />
@@ -107,7 +146,7 @@ export const experienceData = [
       )
     },
     service: {
-      title: 'AI 오디오 서비스 : 가우디오 스튜디오',
+      title: 'Title 작성하기',
       content: (
         <>
           <Titleli title={'📚 What I learned'} list={['작성하기']} />
@@ -146,7 +185,7 @@ export const experienceData = [
       )
     },
     service: {
-      title: 'AI 오디오 서비스 : 가우디오 스튜디오',
+      title: 'Title 작성하기',
       content: (
         <>
           <Titleli title={'📚 What I learned'} list={['작성하기']} />

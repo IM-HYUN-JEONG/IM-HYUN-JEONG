@@ -2,14 +2,29 @@ import { Card } from '@nextui-org/react';
 import React from 'react';
 import Box from '@mui/material/Box';
 import useIntersectionObserver from 'src/utils/customHook/useIntersectionObserver';
+import styled from 'styled-components';
 
 interface SectionProp {
   id: string;
   children?: React.ReactNode;
 }
 
-// CustomSection 컴포넌트
-export const CustomSection = ({ id, children }: SectionProp) => {
+const SectionContainer = styled(Box)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+`;
+const StyledCard = styled(Card)`
+  max-width: 1200px;
+  width: 90%;
+  padding: 20px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+`;
+
+export default function CustomSection({ id, children }: SectionProp) {
   const containerRef = React.useRef(null); // 관찰 대상 Ref
   const entry = useIntersectionObserver(containerRef, {
     threshold: 0.1, // 10% 보이면 트리거
@@ -17,26 +32,11 @@ export const CustomSection = ({ id, children }: SectionProp) => {
   });
 
   return (
-    <Box
-      display="flex"
-      flexDirection="column"
-      alignItems="center"
-      justifyContent="center"
-      width="100%" // 반응형 전체 너비
-    >
-      {/* 섹션 고유 ID */}
-      <Box id={id}></Box>
-
+    <SectionContainer>
       {/* Card 컴포넌트 */}
-      <Card
+      <StyledCard
+        id={id}
         ref={containerRef} // Intersection Observer 타겟
-        style={{
-          maxWidth: '1200px',
-          width: '90%', // 반응형으로 전체 너비의 90% 사용
-          padding: 20, // 내부 여백
-          marginTop: 4,
-          marginBottom: 8
-        }}
       >
         {/* 애니메이션 및 스타일 */}
         <Box
@@ -51,7 +51,7 @@ export const CustomSection = ({ id, children }: SectionProp) => {
         >
           {children} {/* 섹션 컨텐츠 */}
         </Box>
-      </Card>
-    </Box>
+      </StyledCard>
+    </SectionContainer>
   );
-};
+}

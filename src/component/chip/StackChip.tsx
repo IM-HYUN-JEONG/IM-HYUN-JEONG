@@ -1,3 +1,4 @@
+import styled from 'styled-components';
 import { Tooltip } from '@nextui-org/react';
 import Image from 'next/image';
 import { useState } from 'react';
@@ -8,7 +9,29 @@ interface StackChipProp {
   size?: number;
 }
 
-export const StackChip = ({ title, stackList, size = 25 }: StackChipProp) => {
+const Container = styled.div`
+  margin-top: 0.5rem;
+`;
+
+const Title = styled.span`
+  font-size: 0.875rem;
+`;
+
+const StackListContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+`;
+
+const StackItem = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.25rem;
+`;
+
+export default function StackChip({ title, stackList, size = 25 }: StackChipProp) {
   const [errorIndices, setErrorIndices] = useState<Record<number, boolean>>({});
 
   const handleImageError = (index: number) => {
@@ -16,32 +39,21 @@ export const StackChip = ({ title, stackList, size = 25 }: StackChipProp) => {
   };
 
   return (
-    <div className="mt-2">
-      {title && <span className="text-sm"># {title}</span>}
-      <div className="flex flex-row flex-wrap gap-1">
+    <Container>
+      {title && <Title># {title}</Title>}
+      <StackListContainer>
         {stackList.map((stack, index) => (
           <Tooltip content={stack || 'Unknown Stack'} key={index}>
-            <div className="flex flex-row items-center gap-1">
+            <StackItem>
               {errorIndices[index] ? (
-                <Image
-                  src="/icons/default.svg" // 에러 발생 시 기본 이미지 사용
-                  height={size}
-                  width={size}
-                  alt="Default Icon"
-                />
+                <Image src="/icons/default.svg" height={size} width={size} alt="Default Icon" />
               ) : (
-                <Image
-                  src={`/icons/${stack?.toLowerCase() || 'default'}.svg`} // 초기 이미지 경로
-                  onError={() => handleImageError(index)} // 에러 발생 시 상태 업데이트
-                  height={size}
-                  width={size}
-                  alt={stack || 'Unknown Stack'}
-                />
+                <Image src={`/icons/${stack?.toLowerCase() || 'default'}.svg`} onError={() => handleImageError(index)} height={size} width={size} alt={stack || 'Unknown Stack'} />
               )}
-            </div>
+            </StackItem>
           </Tooltip>
         ))}
-      </div>
-    </div>
+      </StackListContainer>
+    </Container>
   );
-};
+}

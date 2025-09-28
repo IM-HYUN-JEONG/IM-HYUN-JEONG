@@ -2,8 +2,8 @@ import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import { IconButton, Stack } from '@mui/material';
 import Image from 'next/image';
 import Link from 'next/link';
-import { CustomSectionTitle } from 'src/component/SectionTitle';
-import { CustomSection } from '../component/CustomSection';
+import CustomSectionTitle from 'src/component/SectionTitle';
+import CustomSection from '../component/CustomSection';
 
 export default function Blog() {
   return (

@@ -1,3 +1,5 @@
+import React from 'react';
+import styled from 'styled-components';
 import { useTheme } from 'next-themes';
 import { MdOutlineWorkOutline } from 'react-icons/md';
 import { colors } from 'src/styles/colors';
@@ -5,32 +7,58 @@ import { colors } from 'src/styles/colors';
 interface TitleliProp {
   title?: string;
   list?: string[];
-  direction?: 'left' | 'right';
+  direction?: 'left' | 'right'; // 현재 미사용
 }
 
-export const Titleli = ({ title, list = [], direction = 'left' }: TitleliProp) => {
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+`;
+
+const TitleSpan = styled.span<{ bgColor: string }>`
+  display: inline-block;
+  padding: 0 0.5rem;
+  font-weight: bold;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 66%, ${({ bgColor }) => bgColor} 33%);
+`;
+
+const ListWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.25rem;
+  padding: 0.5rem;
+`;
+
+const ListItem = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+`;
+
+const ItemText = styled.span`
+  font-size: 0.875rem;
+`;
+
+export default function Titleli({ title, list = [], direction = 'left' }: TitleliProp) {
   const { theme } = useTheme();
   const bgColor = theme === 'dark' ? colors.dark : colors.light;
+
   return (
-    <div className="flex flex-col flex-wrap items-start justify-between">
-      {title && (
-        <span
-          className="inline px-2 font-bold"
-          style={{
-            background: `linear-gradient(180deg, rgba(0,0,0,0) 66%, ${bgColor} 33%)`
-          }}
-        >
-          {title.toLocaleUpperCase()}
-        </span>
-      )}
-      <div className="flex flex-col flex-1 gap-1 p-2">
+    <Container>
+      {title && <TitleSpan bgColor={bgColor}>{title.toUpperCase()}</TitleSpan>}
+
+      <ListWrapper>
         {list.map((item, index) => (
-          <div key={index} className="flex items-center gap-1">
+          <ListItem key={index}>
             <MdOutlineWorkOutline size={12} />
-            <span className="text-sm">{item}</span>
-          </div>
+            <ItemText>{item}</ItemText>
+          </ListItem>
         ))}
-      </div>
-    </div>
+      </ListWrapper>
+    </Container>
   );
-};
+}

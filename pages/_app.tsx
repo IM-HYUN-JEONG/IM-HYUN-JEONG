@@ -1,5 +1,6 @@
+import { Global, EmotionCache } from '@emotion/react';
 import './index.css';
-import { EmotionCache } from '@emotion/react';
+
 import { NextUIProvider } from '@nextui-org/react';
 import { DefaultSeo } from 'next-seo';
 import { ThemeProvider as NextThemesProvider } from 'next-themes';
@@ -11,12 +12,58 @@ interface MyAppProps extends AppProps {
   emotionCache?: EmotionCache;
 }
 
+const GlobalStyle = (
+  <Global
+    styles={`
+      body {
+        margin: 0;
+        font-family: 'Noto Sans CJK KR', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        font-style: 'normal';
+        font-weight: 500;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        /* Tailwind CSS의 기본 스타일(예: margin, box-sizing)이 필요하다면 여기에 추가할 수 있습니다. */
+        /* 예: box-sizing: border-box; */
+      }
+      
+      @font-face {
+        font-family: 'Noto Sans CJK KR';
+        font-style: normal;
+        font-weight: 100;
+        src: url('/fonts/NotoSansKR-Light.woff2') format('woff2'), url('/fonts/NotoSansKR-Light.woff') format('font-woff'), url('/fonts/NotoSansKR-Light.otf') format('truetype');
+      }
+      
+      @font-face {
+        font-family: 'Noto Sans CJK KR';
+        font-style: normal;
+        font-weight: normal;
+        src: url('/fonts/NotoSansKR-Regular.woff2') format('woff2'), url('/fonts/NotoSansKR-Regular.woff') format('font-woff'), url('/fonts/NotoSansKR-Regular.otf') format('truetype');
+      }
+      
+      @font-face {
+        font-family: 'Noto Sans CJK KR';
+        font-style: normal;
+        font-weight: 500;
+        src: url('/fonts/NotoSansKR-Medium.woff2') format('woff2'), url('/fonts/NotoSansKR-Medium.woff') format('font-woff'), url('/fonts/NotoSansKR-Medium.otf') format('truetype');
+      }
+      
+      @font-face {
+        font-family: 'Noto Sans CJK KR';
+        font-style: normal;
+        font-weight: bold;
+        src: url('/fonts/NotoSansKR-Bold.woff2') format('woff2'), url('/fonts/NotoSansKR-Bold.woff') format('font-woff'), url('/fonts/NotoSansKR-Bold.otf') format('truetype');
+      }
+    `}
+  />
+);
+
 export default function MyApp(props: MyAppProps) {
   const { Component, pageProps } = props;
 
   return (
     <NextUIProvider>
       <NextThemesProvider attribute="class" defaultTheme="light">
+        {GlobalStyle}
         <Head>
           <title>ImHyunJeong | 편리함을 추구하는 개발자 </title>
           <meta charSet="utf-8" />

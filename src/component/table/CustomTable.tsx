@@ -1,3 +1,5 @@
+import React from 'react';
+import styled from 'styled-components';
 import { Card, Table, TableBody, TableColumn, TableHeader, TableRow } from '@nextui-org/react';
 
 interface CustomTableProp {
@@ -5,6 +7,14 @@ interface CustomTableProp {
   footer?: string;
   children?: any;
 }
+
+const FooterContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 0.5rem;
+  font-size: 0.875rem;
+`;
 
 export default function CustomTable({ header = [], footer, children }: CustomTableProp) {
   return (
@@ -21,7 +31,7 @@ export default function CustomTable({ header = [], footer, children }: CustomTab
         </TableHeader>
         <TableBody>{children}</TableBody>
       </Table>
-      {footer && <div className="flex items-end justify-center px-2 text-sm">{footer}</div>}
+      {footer && <FooterContainer>{footer}</FooterContainer>}
     </Card>
   );
 }

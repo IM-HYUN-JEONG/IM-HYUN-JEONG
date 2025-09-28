@@ -1,68 +1,165 @@
+'use client';
+import React from 'react';
+import styled from 'styled-components';
 import { SamplePlayerCard } from '@component/card/SamplePlayer';
 import WaveCard from '@component/card/WaveCard';
-import { CustomSection } from '@component/CustomSection';
-import {
-  Badge,
-  BreadcrumbItem,
-  Breadcrumbs,
-  Button,
-  Card,
-  CardFooter,
-  Checkbox,
-  CheckboxGroup,
-  Chip,
-  Modal,
-  ModalBody,
-  ModalContent,
-  ModalHeader,
-  Tab,
-  Tabs,
-  Tooltip,
-  useDisclosure,
-  User
-} from '@nextui-org/react';
-import { CustomSectionTitle } from 'src/component/SectionTitle';
-
+import CustomSection from '@component/CustomSection';
+import { Badge, BreadcrumbItem, Breadcrumbs, Checkbox, CheckboxGroup, Chip, Tooltip, User } from '@nextui-org/react';
+import CustomSectionTitle from 'src/component/SectionTitle';
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-
-import { SlSizeFullscreen } from 'react-icons/sl';
 import getExperiencedYear from 'src/utils/getExperiencedYear';
+
+const Container = styled.div`
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 1rem;
+`;
+
+const FlexWrapContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 40rem;
+`;
+
+const LeftSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: 1rem;
+  min-width: 20rem;
+`;
+
+const IntroTextContainer = styled.div`
+  padding: 0 1rem;
+  text-align: center;
+
+  .main-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.6;
+  }
+
+  .highlight {
+    color: #3b82f6;
+  }
+
+  .sub-text {
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: #4b5563; 
+`;
+
+const RightSection = styled.div`
+  display: flex;
+  flex: 1;
+`;
+
+const RightInner = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 1rem;
+`;
+
+const DevCardContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @media (min-width: 640px) {
+    flex-direction: column;
+  }
+`;
+
+const ContentWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+`;
+
+const Paragraph = styled.div`
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.7;
+
+  strong {
+    font-weight: bold;
+  }
+`;
+
+const DevelopingCard = () => {
+  return (
+    <WaveCard duration={8}>
+      <div style={{ fontSize: '0.875rem', color: 'rgba(0,0,0,0.8)' }}>{getExperiencedYear().NYear} 프론트엔드 개발자</div>
+      <div style={{ fontSize: '0.75rem', color: 'rgba(0,0,0,0.4)' }}>{getExperiencedYear().NYearNMonth}째 개발중</div>
+    </WaveCard>
+  );
+};
+
+const CheckboxGroupdd = () => {
+  return (
+    <WaveCard duration={8}>
+      <CheckboxGroup
+        label={
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '0.25rem' }}>
+            5S 개발자
+            <Tooltip
+              showArrow
+              content={
+                <div style={{ padding: '0.25rem 0.5rem' }}>
+                  <div style={{ fontWeight: 'bold', fontSize: '0.875rem' }}>5S 개발자란?</div>
+                  <div style={{ fontSize: '0.75rem' }}>공부(Study), 공유(Save), 기록(Save), 버그없는(Safe), 시니어(Senior)</div>
+                </div>
+              }
+            ></Tooltip>
+          </div>
+        }
+        size="sm"
+        value={['study', 'communicate', 'save']}
+      >
+        <Checkbox value="study">공부하는 개발자</Checkbox>
+        <Checkbox value="communicate">소통하는 개발자</Checkbox>
+        <Checkbox value="save">기록하는 개발자</Checkbox>
+        <Checkbox value="fast">피드백 빠른 개발자</Checkbox>
+        <Checkbox value="senior">시니어 개발자</Checkbox>
+      </CheckboxGroup>
+    </WaveCard>
+  );
+};
 
 export default function IntroSection() {
   const { t } = useTranslation();
 
-  const copyEmailToClipboard = () => {
-    navigator.clipboard.writeText('handy.kang.dev@gmail.com');
-    openCopySuccessSnackBar();
-  };
-
-  const [copySuccessSnackBar, setCopySuccessSnackBar] = React.useState(false);
-  const openCopySuccessSnackBar = () => {
-    setCopySuccessSnackBar(true);
-  };
-  const closeCopySuccessSnackBar = () => {
-    setCopySuccessSnackBar(false);
-  };
-
   return (
-    <div className="container py-8 mt-4">
-      <div className="flex flex-wrap w-full min-h-[40rem]">
-        <div className="flex flex-col items-center justify-center flex-1 gap-4 min-w-[20rem]">
-          <Image className="rounded-full bg-[#ffffff]" alt={'face image'} src={'/images/intro/character.png'} width={200} height={200} layout={'fixed'} priority={true} />
-          <div className="px-4">
-            <div className="text-2xl font-semibold">
+    <Container>
+      <FlexWrapContainer>
+        {/* 왼쪽 영역 */}
+        <LeftSection>
+          <Image style={{ borderRadius: '50%', backgroundColor: '#ffffff' }} alt={'face image'} src={'/images/intro/character.png'} width={200} height={200} priority={true} />
+          <IntroTextContainer>
+            <div className="main-text">
               개발에 열정을 갖고 꾸준한 학습으로 성장하는 개발자,
               <br />
-              <span className="text-blue-500">임현정</span>입니다
+              <span className="highlight">임현정</span>입니다
             </div>
-            <div className="text-sm font-light text-gray-600 dark:text-gray-300">{getExperiencedYear().NYear}차 Frontend 개발자 입니다.</div>
-          </div>
-        </div>
-        <div className="flex flex-1">
-          <div className="flex flex-wrap items-center justify-center w-full h-full gap-4 gap-y-4">
+            <div className="sub-text">{getExperiencedYear().NYear}차 Frontend 개발자 입니다.</div>
+          </IntroTextContainer>
+        </LeftSection>
+
+        {/* 오른쪽 영역 */}
+        <RightSection>
+          <RightInner>
             <WaveCard className="top-4" duration={2}>
               <Badge
                 content="재직중"
@@ -81,18 +178,18 @@ export default function IntroSection() {
               </Badge>
             </WaveCard>
             <WaveCard duration={4}>
-              <Image src={`/icons/typescript.svg`} height={30} width={30} />
+              <Image src={`/icons/typescript.svg`} height={30} width={30} alt="typescript" />
             </WaveCard>
             <WaveCard duration={2}>
-              <Image src={`/icons/react.svg`} height={30} width={30} />
+              <Image src={`/icons/react.svg`} height={30} width={30} alt="react" />
             </WaveCard>
             <WaveCard duration={4}>
               <User
-                className="cursor-pointer"
+                style={{ cursor: 'pointer' }}
                 name="hyun의 지식 블로그"
                 description={
                   <Link href="https://i-do-love-me.tistory.com/">
-                    <div className="flex items-center gap-1">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.25rem' }}>
                       @Dev-blog
                       <Chip radius="sm" size="sm">
                         글(95개)
@@ -107,21 +204,21 @@ export default function IntroSection() {
             </WaveCard>
 
             <SamplePlayerCard />
-            <div className="flex flex-row flex-wrap sm:flex-col">
+            <DevCardContainer>
               <DevelopingCard />
-            </div>
+            </DevCardContainer>
             <WaveCard duration={2}>
-              <Image className="bg-white" src={`/icons/next-js.svg`} height={30} width={30} />
+              <Image style={{ backgroundColor: 'white' }} src={`/icons/next-js.svg`} height={30} width={30} alt="nextjs" />
             </WaveCard>
             <CheckboxGroupdd />
-          </div>
-        </div>
-      </div>
+          </RightInner>
+        </RightSection>
+      </FlexWrapContainer>
 
-      <CustomSection id="sample">
+      <CustomSection id="intro">
         <CustomSectionTitle title={'Intro'} subTitle={'개발에 열정을 갖고 꾸준한 학습으로 성장하는 개발자 임현정 입니다'} />
-        <div className="flex flex-col flex-wrap w-full justify-evenly">
-          <div className="text-sm font-normal">
+        <ContentWrapper>
+          <Paragraph>
             <strong>삼성반도체에서 프리랜서 React 개발자로 일하고 있습니다.</strong>
             <br />
             React를 중심으로 웹 개발에 주력하며, 사용자 경험(UX)을 최적화하는 데 열정을 가지고 있습니다.
@@ -133,7 +230,7 @@ export default function IntroSection() {
             저는 개발자로서 성장을 위한 끊임없는 노력, 효율적인 커뮤니케이션, 전문적인 개발 능력 세 가지 가치를 중요하게 생각합니다. <br />
             꾸준히 학습하고 기록하는 습관을 통해 어제보다 한걸음 더 성장해가고 있습니다. <br />
             <br />
-            제 직업적 꿈은 조직에서 인정받고 ‘최고’로 평가받는 풀스택 개발자가 되는 것입니다. <br />
+            제 직업적 꿈은 주변에서 인정받고 ‘최고’로 평가받는 풀스택 개발자가 되는 것입니다. <br />
             동료들이 “현정님한테 물어봐!”라고 할 수 있는 사람이 되고자 합니다. <br />
             이를 위해 일을 책임감 있게 수행하며, 프로정신을 가지고 최선을 다하고 있습니다.
             <br />
@@ -153,49 +250,9 @@ export default function IntroSection() {
             새로운 도전을 두려워하지 않으며 항상 최상의 결과를 위해 노력합니다.
             <br /> 현재 프리랜서로 삼성반도체 상주 프로젝트를 진행하고 있습니다. <br />
             <strong>Frontend에 전문성을 두고, 점차적으로 백엔드 분야도 경험하고 있습니다.</strong>
-          </div>
-        </div>
+          </Paragraph>
+        </ContentWrapper>
       </CustomSection>
-    </div>
+    </Container>
   );
 }
-
-const DevelopingCard = () => {
-  return (
-    <WaveCard duration={8}>
-      <div className="text-sm text-foreground/80">{getExperiencedYear().NYear} 프론트엔드 개발자</div>
-      <div className="text-xs text-foreground/40">{getExperiencedYear().NYearNMonth}째 개발중</div>
-    </WaveCard>
-  );
-};
-
-const CheckboxGroupdd = () => {
-  return (
-    <WaveCard duration={8}>
-      <CheckboxGroup
-        label={
-          <div className="flex items-center justify-between gap-1">
-            5S 개발자
-            <Tooltip
-              showArrow
-              content={
-                <div className="px-1 py-2">
-                  <div className="font-bold text-small">5S 개발자란?</div>
-                  <div className="text-tiny">공부(Study), 공유(Save), 기록(Save), 버그없는(Safe), 시니어(Senior)</div>
-                </div>
-              }
-            ></Tooltip>
-          </div>
-        }
-        size="sm"
-        value={['study', 'share', 'save']}
-      >
-        <Checkbox value="study">공부하는 개발자</Checkbox>
-        <Checkbox value="share">공유하는 개발자</Checkbox>
-        <Checkbox value="save">기록하는 개발자</Checkbox>
-        <Checkbox value="sate">버그없는 개발자</Checkbox>
-        <Checkbox value="senior">시니어 개발자</Checkbox>
-      </CheckboxGroup>
-    </WaveCard>
-  );
-};

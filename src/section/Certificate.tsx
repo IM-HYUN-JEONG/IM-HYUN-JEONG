@@ -1,8 +1,8 @@
 import { Table, TableBody, TableCell, TableColumn, TableHeader, TableRow } from '@nextui-org/react';
 import Image from 'next/image';
 import ExtraInfoDialog from 'src/component/dialog/ExtraInfoDialog';
-import { CustomSectionTitle } from 'src/component/SectionTitle';
-import { CustomSection } from '../component/CustomSection';
+import CustomSectionTitle from 'src/component/SectionTitle';
+import CustomSection from '../component/CustomSection';
 import { Box } from '@mui/material';
 
 const certificateItems = [

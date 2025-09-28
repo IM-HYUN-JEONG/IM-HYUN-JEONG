@@ -1,12 +1,10 @@
 import { Table, TableBody, TableCell, TableColumn, TableHeader, TableRow } from '@nextui-org/react';
 import { useTranslation } from 'react-i18next';
 import ExtraInfoDialog from 'src/component/dialog/ExtraInfoDialog';
-import { CustomSectionTitle } from 'src/component/SectionTitle';
-import { CustomSection } from '../component/CustomSection';
-import { StackChip } from 'src/component/chip/StackChip';
-import { UrlChip } from 'src/component/chip/UrlChip';
+import CustomSectionTitle from 'src/component/SectionTitle';
+import CustomSection from '../component/CustomSection';
 import { Companyli } from 'src/component/ul/Companyli';
-import { Titleli } from 'src/component/ul/Titleli';
+import Titleli from 'src/component/ul/Titleli';
 import { experienceData } from './experienceData';
 
 // 공통 컴포넌트: 회사 정보를 렌더링

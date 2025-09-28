@@ -1,6 +1,6 @@
-import { StackChip } from '@component/chip/StackChip';
-import { UrlChip } from '@component/chip/UrlChip';
-import { Titleli } from '@component/ul/Titleli';
+import StackChip from '@component/chip/StackChip';
+import UrlChip from '@component/chip/UrlChip';
+import Titleli from '@component/ul/Titleli';
 
 // 경험 데이터를 배열로 정의
 export const experienceData = [

@@ -1,3 +1,4 @@
+import styled from 'styled-components';
 import { Chip } from '@nextui-org/react';
 import Link from 'next/link';
 
@@ -6,14 +7,29 @@ interface UrlChipProp {
   url: string;
 }
 
-export const UrlChip = ({ title, url }: UrlChipProp) => {
+const StyledChip = styled(Chip)`
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  opacity: 0.8;
+  & a {
+    text-decoration: none;
+  }
+`;
+
+const ChipText = styled.span`
+  font-size: 0.75rem;
+`;
+
+export default function UrlChip({ title, url }: UrlChipProp) {
   return (
-    <Chip radius="sm" className="px-0 mx-1 opacity-80" color="primary">
-      <Link href={url}>
-        <a target="_blank" style={{ textDecoration: 'none' }}>
-          <span className="text-xs">{title}</span>
+    <StyledChip radius="sm" color="primary">
+      <Link href={url} legacyBehavior>
+        <a target="_blank">
+          <ChipText>{title}</ChipText>
         </a>
       </Link>
-    </Chip>
+    </StyledChip>
   );
-};
+}

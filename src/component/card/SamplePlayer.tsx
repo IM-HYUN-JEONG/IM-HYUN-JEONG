@@ -136,8 +136,8 @@ export const SamplePlayerCard = ({ className, ...otherProps }: SamplePlayerCardP
             <ExperienceSection>
               <Slider color="foreground" size="sm" step={0.01} maxValue={1} minValue={0} defaultValue={0.4} className="max-w-md" />
               <div className="flex justify-between">
-                <p className="text-sm text-foreground/50">22/09</p>
-                <p className="text-sm text-foreground/50">{'+' + getExperiencedYear().NYearNMonth + 'days'}</p>
+                <p className="text-sm text-foreground/50">22년09월 ~ ing</p>
+                <p className="text-sm text-foreground/50">{'+' + getExperiencedYear().NYearNMonth}</p>
               </div>
             </ExperienceSection>
 

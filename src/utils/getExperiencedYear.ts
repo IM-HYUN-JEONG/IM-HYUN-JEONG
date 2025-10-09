@@ -1,48 +1,31 @@
-import dayjs from "dayjs";
+import dayjs from 'dayjs';
 
-const getExperienceWithBreaks = () => {
+/** 전체 근무 기간 계산 */
+const getExperiencedYear = () => {
   const workingPeriods = [
-    { start: "2022/09/01", end: "2022/12/31" },
-    { start: "2023/01/01", end: "2023/06/30" },
-    { start: "2023/10/01", end: "2024/05/31" },
-    { start: "2024/05/01", end: "2024/12/31" },
+    { start: '2022/09/01', end: '2022/12/31' },
+    { start: '2023/01/01', end: '2023/06/30' },
+    { start: '2023/10/01', end: '2024/05/31' },
+    { start: '2024/05/01', end: '2025/02/28' },
+    { start: '2025/03/01', end: dayjs().format('YYYY/MM/DD') }
   ];
 
-  let totalPeriodMonth = 0;
+  // 총 일수 계산
+  const totalDays = workingPeriods.reduce((sum, period) => {
+    const start = dayjs(period.start);
+    const end = dayjs(period.end);
+    return sum + end.diff(start, 'day') + 1;
+  }, 0);
 
-  workingPeriods.forEach((period) => {
-    totalPeriodMonth += dayjs(period.end).diff(dayjs(period.start), "month");
-  });
-
-  const periodDurationYear = Math.floor(totalPeriodMonth / 12);
-  const periodDurationMonth = totalPeriodMonth % 12;
+  // 총 개월 계산
+  const totalMonths = totalDays / 30.4375; // 평균 월 길이 (365.25 / 12)
+  const years = Math.floor(totalMonths / 12);
+  const months = Math.round(totalMonths % 12);
 
   return {
-    NYear: periodDurationYear + " 년",
-    NYearNMonth: `${periodDurationYear}년 ${periodDurationMonth}개월`,
+    NYear: `${years} 년`,
+    NYearNMonth: `${years}년 ${months}개월`
   };
 };
 
-export const getExperiencedYearFrom = (date: string) => {
-  const workingPeriods = [
-    { start: "2022/09/01", end: "2022/12/31" },
-    { start: "2023/01/01", end: "2023/06/30" },
-    { start: "2023/10/01", end: "2024/05/31" },
-    { start: "2024/05/01", end: "2024/12/31" },
-  ];
-
-  let totalPeriodMonth = 0;
-
-  workingPeriods.forEach((period) => {
-    totalPeriodMonth += dayjs(period.end).diff(dayjs(period.start), "month");
-  });
-
-  const periodDurationYear = Math.floor(totalPeriodMonth / 12);
-  const periodDurationMonth = totalPeriodMonth % 12;
-
-  return {
-    NYear: periodDurationYear + " years",
-    NYearNMonth: `${periodDurationYear} years ${periodDurationMonth} months`,
-  };
-};
-export default getExperienceWithBreaks;
+export default getExperiencedYear;

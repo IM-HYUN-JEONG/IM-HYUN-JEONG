@@ -174,6 +174,7 @@ export default function IntroSection() {
                   <BreadcrumbItem>Kakao 계열사</BreadcrumbItem>
                   <BreadcrumbItem>Hancom 계열사</BreadcrumbItem>
                   <BreadcrumbItem>(주)아나사</BreadcrumbItem>
+                  <BreadcrumbItem>(주)삼성반도체_프리랜서</BreadcrumbItem>
                 </Breadcrumbs>
               </Badge>
             </WaveCard>

@@ -7,6 +7,7 @@ import { ThemeProvider as NextThemesProvider } from 'next-themes';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 import 'react-vertical-timeline-component/style.min.css';
+import getExperiencedYear from 'src/utils/getExperiencedYear';
 
 interface MyAppProps extends AppProps {
   emotionCache?: EmotionCache;
@@ -75,7 +76,7 @@ export default function MyApp(props: MyAppProps) {
         </Head>
         <DefaultSeo
           canonical={'https://im-hyun-jeong.vercel.app/'}
-          description={'2년차 프론트엔드 개발자 임현정의 포트폴리오입니다.'}
+          description={`${getExperiencedYear().NYear}차 프론트엔드 개발자 임현정의 포트폴리오입니다.`}
           openGraph={{
             type: 'website',
             title: 'ImHyunJeong | 편리함을 추구하는 개발자',
@@ -87,7 +88,7 @@ export default function MyApp(props: MyAppProps) {
                 alt: "im's image"
               }
             ],
-            description: '2년차 프론트엔드 개발자 임현정의 포트폴리오입니다.',
+            description: `${getExperiencedYear().NYear}차 프론트엔드 개발자 임현정의 포트폴리오입니다.`,
             site_name: 'ImHyunJeong | 편리함을 추구하는 개발자'
           }}
         />
